@@ -6,3 +6,6 @@ class Index(TemplateView):
 
 class About(TemplateView):
     template_name = "my_mixtape/about.html"
+
+class Library(TemplateView):
+    template_name = "my_mixtape/library.html"
