@@ -1,1 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container d-flex justify-content-center">
+    <img src="{% static 'images/My_Mix_Tape_logo.svg' %}" id="logo" alt="my mix tape logo">
+</div>
+{% endblock %}

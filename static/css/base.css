@@ -29,6 +29,17 @@ main {
     flex: 1 0 auto;
 }
 
+h1, h2, h3 {
+    font-family: 'Hurricane', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+
+}
+
 a {
     text-decoration: none;
 }
@@ -42,13 +53,13 @@ a {
 }
 
 .active {
-    color: var(--blue);
+    color: var(--pink);
 }
 
 /* Home */
 
 #logo {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
     height: 25rem;
     -webkit-box-reflect: below -5px
     linear-gradient( to bottom,
@@ -87,3 +98,11 @@ footer {
     color: var(--blue);
 }
 
+/* Form */
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
