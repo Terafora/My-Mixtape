@@ -77,7 +77,7 @@ a {
 
 /* Footer*/
 footer {
-    flex-shrink: 0
+    flex-shrink: 0;
     background-color: var(--color-background);
     display: flex;
     flex-direction: row;
@@ -85,6 +85,10 @@ footer {
     align-items: center;
     z-index: 2;
     height: 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .social-icons {
