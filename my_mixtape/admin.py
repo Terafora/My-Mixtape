@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Mixtape_Collection, Mixtape
+from .models import Mixtape_Collection, Mixtape, Track
 
 
 # Register your models here.
@@ -13,3 +13,8 @@ class Mixtape_CollectionAdmin(admin.ModelAdmin):
 class MixtapeAdmin(admin.ModelAdmin):
     list_display = ('name', 'collection')
     list_filter = ('collection',)
+
+@admin.register(Track)
+class TrackAdmin(admin.ModelAdmin):
+    list_display = ('title', 'artist', 'genre', 'mixtape', 'song_link')
+    list_filter = ('mixtape', 'genre')
