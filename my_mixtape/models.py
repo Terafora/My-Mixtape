@@ -60,6 +60,7 @@ class Mixtape(models.Model):
     name = models.CharField(max_length=200, null = False, blank = False)
     image = ResizedImageField(size=[400, None], quality=75, upload_to='my_mixtape/', force_format='WEBP', null = True, blank = True)
     image_alt = models.CharField(max_length=100, null = True, blank = True)
+    about = RichTextField(max_length= 1000 ,null = True, blank = True)
     genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
 
     def __str__(self):
@@ -72,6 +73,6 @@ class Track(models.Model):
     artist = models.CharField(max_length=200, null=True, blank=True)
     duration = models.DurationField(null=True, blank=True)
     song_link = models.URLField(max_length=500, null=False, blank=False)
-
+    genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
     def __str__(self):
         return f"{self.title} - {self.artist} ({self.mixtape.name})"
