@@ -62,17 +62,25 @@ class Mixtape(models.Model):
     image_alt = models.CharField(max_length=100, null = True, blank = True)
     about = RichTextField(max_length= 1000 ,null = True, blank = True)
     genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
+    posted_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"{self.name} - {self.collection.name}"
+    
+    class Meta:
+        ordering = ['-posted_date']
 
 class Track(models.Model):
     """A track in a mixtape"""
     mixtape = models.ForeignKey(Mixtape, on_delete=models.CASCADE, related_name='tracks')
     title = models.CharField(max_length=200, null=False, blank=False)
     artist = models.CharField(max_length=200, null=True, blank=True)
-    duration = models.DurationField(null=True, blank=True)
     song_link = models.URLField(max_length=500, null=False, blank=False)
     genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
+    posted_date = models.DateTimeField(auto_now=True)
+
     def __str__(self):
         return f"{self.title} - {self.artist} ({self.mixtape.name})"
+    
+    class Meta:
+        ordering = ['-posted_date']
