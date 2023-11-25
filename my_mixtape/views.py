@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 from django.views.generic import CreateView
 from django.db import models
+from django.shortcuts import get_object_or_404
 from .models import Track, Mixtape
 
 # Point to the correct template
@@ -34,6 +35,17 @@ class AddTrack(CreateView):
     template_name = "my_mixtape/add_track.html"
     success_url = '/library/'
 
+# This is for ensuring that I get the correct mixtape when adding a track
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        mixtape_id = self.kwargs.get('mixtape_id')
+        context['mixtape'] = get_object_or_404(Mixtape, pk=mixtape_id)
+        return context
+
+# Access mixtape from context
+
     def form_valid(self, form):
-        form.instance.mixtape = Mixtape.objects.get(pk=self.kwargs['pk'])
+        mixtape = self.get_context_data()['mixtape']  
+        form.instance.mixtape = mixtape
         return super().form_valid(form)
