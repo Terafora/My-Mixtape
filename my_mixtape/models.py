@@ -30,6 +30,7 @@ GENRES = [
     ('Reggae', 'Reggae'),
     ('Soul', 'Soul'),
     ('Funk', 'Funk'),
+    ('Bossa Nova', 'Bossa Nova'),
     ('Disco', 'Disco'),
     ('Gospel', 'Gospel'),
     ('World', 'World'),
@@ -45,35 +46,35 @@ GENRES = [
 ]
 
 
-# Mixtape collection and Mixtape models
+# # Mixtape collection and Mixtape models
 
 
-class Mixtape_Collection(models.Model):
-    """A collection of mixtapes the user has created"""
-    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtape_collections')
-    name = models.CharField(max_length=200, null = False, blank = False)
+# class Mixtape_Collection(models.Model):
+#     """A collection of mixtapes the user has created"""
+#     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtape_collections')
+#     name = models.CharField(max_length=200, null = False, blank = False)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name
     
-# Signal to create a Mixtape_Collection instance upon user creation
-@receiver(post_save, sender=User)
-def create_user_mixtape_collection(sender, instance, created, **kwargs):
-    if created:
-        Mixtape_Collection.objects.create(owner=instance, name=f"{instance.username}'s Mixtapes")
+# # Signal to create a Mixtape_Collection instance upon user creation
+# @receiver(post_save, sender=User)
+# def create_user_mixtape_collection(sender, instance, created, **kwargs):
+#     if created:
+#         Mixtape_Collection.objects.create(owner=instance, name=f"{instance.username}'s Mixtapes")
 
 class Mixtape(models.Model):
     """A mixtape created by the user which will be in their collection"""
-    collection = models.ForeignKey(Mixtape_Collection, on_delete=models.CASCADE, related_name='mixtapes')
+    collection = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtapes')
     name = models.CharField(max_length=200, null = False, blank = False)
     image = ResizedImageField(size=[400, None], quality=75, upload_to='my_mixtape/', force_format='WEBP', null = True, blank = True)
     image_alt = models.CharField(max_length=100, null = True, blank = True)
     about = RichTextField(max_length= 1000 ,null = True, blank = True)
-    genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
+    genre = models.CharField(max_length=33, choices=GENRES, default = 'Misc.')
     posted_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.name} - {self.collection.name}"
+        return f"{self.name}"
     
     class Meta:
         ordering = ['-posted_date']
