@@ -193,6 +193,9 @@ STATICFILES_DIRS = [
     # Add other directories if needed
 ]
 
+MIME_TYPES = {
+    'text/css': '.css',
+}
 
 
 # Cloudinary Settings
