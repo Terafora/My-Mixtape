@@ -194,7 +194,7 @@ STATICFILES_DIRS = [
 ]
 
 MIME_TYPES = {
-    'text/css': '.css',
+    'text/html': '.css',
 }
 
 
