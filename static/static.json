@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "/static/css/*.css": {
+      "Content-Type": "text/css"
+    }
+  }
+}
