@@ -197,7 +197,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 CLOUDINARY_URL = os.environ.get("CLOUDINARY_URL")
 
 # WhiteNoise Settings
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 WHITENOISE_KEEP_ONLY_HASHED_FILES = True
