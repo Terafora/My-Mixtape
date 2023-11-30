@@ -6,12 +6,15 @@ from .models import Track, Mixtape
 # Point to the correct template
 
 class Index(TemplateView):
+    """The home page for My Mixtape"""
     template_name = "my_mixtape/index.html"
 
 class About(TemplateView):
+    """The about page for My Mixtape"""
     template_name = "my_mixtape/about.html"
 
 class Library(ListView):
+    """The library of mixtapes for a user"""
     template_name = "my_mixtape/library.html"
     model = Mixtape
     context_object_name = 'mixtapes'
