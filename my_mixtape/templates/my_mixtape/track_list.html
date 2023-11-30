@@ -3,6 +3,7 @@
 {% block title %}{{ mixtape.name }}{% endblock %}
 
 {% block content %}
+<div class="container  justify-content-center text-center my-5 text-white">
     <h1>{{ mixtape.name }}</h1>
     <p>{{ mixtape.about }}</p>
     <p>Created by {{ mixtape.collection }}</p>
@@ -19,5 +20,10 @@
             <p>{{ track.album }}</p>
         {% endfor %}
     </div>
+    <div class="container">
+        <a href=" {% url 'add_track' mixtape_id=mixtape.id %} ">
+            <button class="btn btn-primary">Add Track</button>
+        </a>
+    </div>
+</div>
 {% endblock %}
-```
