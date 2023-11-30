@@ -1,5 +1,6 @@
 from django.views.generic import TemplateView, ListView, CreateView
 from django.db import models
+from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from .models import Track, Mixtape
 
@@ -17,7 +18,7 @@ class Library(ListView):
     """The library of mixtapes for a user"""
     template_name = "my_mixtape/library.html"
     model = Mixtape
-    context_object_name = 'mixtapes'
+    context_object_name = 'user_mixtapes'
 
     def get_queryset(self):
         return Mixtape.objects.filter(collection=self.request.user)
@@ -58,7 +59,7 @@ class AddTrack(CreateView):
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
     template_name = "my_mixtape/add_track.html"
-    success_url = '/library/'
+    #success_url = '/mixtape/{mixtape_id}/'
 
 # This is for ensuring that I get the correct mixtape when adding a track
 
@@ -71,6 +72,11 @@ class AddTrack(CreateView):
 # Access mixtape from context
 
     def form_valid(self, form):
-        mixtape = self.get_context_data()['mixtape']  
+        mixtape_id = self.kwargs.get('mixtape_id')
+        mixtape = get_object_or_404(Mixtape, pk=mixtape_id)
         form.instance.mixtape = mixtape
         return super().form_valid(form)
+
+    def get_success_url(self):
+        mixtape_id = self.kwargs.get('mixtape_id')
+        return reverse('mixtape_detail', kwargs={'mixtape_id': mixtape_id})
