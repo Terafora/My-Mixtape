@@ -1,5 +1,4 @@
-from django.views.generic import TemplateView
-from django.views.generic import CreateView
+from django.views.generic import TemplateView, ListView, CreateView
 from django.db import models
 from django.shortcuts import get_object_or_404
 from .models import Track, Mixtape
@@ -12,10 +11,14 @@ class Index(TemplateView):
 class About(TemplateView):
     template_name = "my_mixtape/about.html"
 
-class Library(TemplateView):
+class Library(ListView):
     template_name = "my_mixtape/library.html"
+    model = Mixtape
+    context_object_name = 'mixtapes'
 
 # Used for CRUD
+
+# Views for mixtape objects
 
 class AddMixTape(CreateView):
     """Add a mixtape to a mixtape collection"""
@@ -27,6 +30,22 @@ class AddMixTape(CreateView):
     def form_valid(self, form):
         form.instance.collection = self.request.user
         return super().form_valid(form)
+
+class OpenTrackList(ListView):
+    """Open a list of tracks in a mixtape"""
+    model = Mixtape
+    template_name = "my_mixtape/track_list.html"
+    context_object_name = 'mixtape'
+    pk_url_kwarg = 'mixtape_id'
+    
+    #def get_queryset(self):
+    #    mixtape_id = self.kwargs.get('mixtape_id')
+    #    return Track.objects.filter(mixtape=mixtape_id)
+
+
+
+# Views for track objects
+
 
 class AddTrack(CreateView):
     """Add a track to a mixtape"""

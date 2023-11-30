@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ mixtape.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ mixtape.name }}</h1>
+    <p>{{ mixtape.about }}</p>
+    <p>Created by {{ mixtape.collection }}</p>
+    <p>Created on {{ mixtape.created_on }}</p>
+    <p>Updated on {{ mixtape.updated_on }}</p>
+    <p>Tracks:</p>
+    <div>
+        {% for track in mixtape.tracks.all %}
+        <a href="{{ track.url }}" target="_blank">
+            <img src="{{ track.image.url }}" alt="{{ track.title }}">
+            <h3>{{ track.title }}</h3>
+        </a>
+            <p>{{ track.artist }}</p>
+            <p>{{ track.album }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
+```

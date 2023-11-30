@@ -1,10 +1,26 @@
 {% extends 'base.html' %}
 
 {% load static %}
+
+{% block title %} Mix Tapes {% endblock %}
+
 {% block content %}
 
 <div class="container justify-content-center text-center mt-5">
     <h1>Your Mix Tapes</h1>
 </div>
-
+{% for mixtape in mixtapes %}
+    <div class="container justify-content-center text-center mt-5">
+        <div class="card">
+            <div class="card-body">
+                <img
+                    {% if mixtape.image %} src="{{mixtape.image}}" {% else %}src="{% static 'images/mixtape.png' %}" {% endif %}
+                    class="card-img-top"  
+                    {% if mixtape.image_alt %}alt="{{mixtape.image_alt}}" {% else %} alt="{{mixtape.name}}"{% endif %}>
+                <h5 class="card-title">{{ mixtape.name }}</h5>
+                <a href="{% url 'mixtape_detail' mixtape.id %}" class="btn btn-primary">View Mix Tape</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
 {% endblock %}
