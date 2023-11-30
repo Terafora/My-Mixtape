@@ -16,6 +16,9 @@ class Library(ListView):
     model = Mixtape
     context_object_name = 'mixtapes'
 
+    def get_queryset(self):
+        return Mixtape.objects.filter(collection=self.request.user)
+
 # Used for CRUD
 
 # Views for mixtape objects
