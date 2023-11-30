@@ -1,4 +1,6 @@
-from django.views.generic import TemplateView, ListView, CreateView
+from django.views.generic import TemplateView, ListView, CreateView, UpdateView, DetailView
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.urls import reverse_lazy
 from django.db import models
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
@@ -38,7 +40,7 @@ class AddMixTape(CreateView):
         form.instance.collection = self.request.user
         return super().form_valid(form)
 
-class OpenTrackList(ListView):
+class OpenTrackList(DetailView):
     """Open a list of tracks in a mixtape"""
     model = Mixtape
     template_name = "my_mixtape/track_list.html"
@@ -49,27 +51,18 @@ class OpenTrackList(ListView):
     #    mixtape_id = self.kwargs.get('mixtape_id')
     #    return Track.objects.filter(mixtape=mixtape_id)
 
-
-
-# Views for track objects
-
-
 class AddTrack(CreateView):
     """Add a track to a mixtape"""
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
     template_name = "my_mixtape/add_track.html"
-    #success_url = '/mixtape/{mixtape_id}/'
-
-# This is for ensuring that I get the correct mixtape when adding a track
+    success_url = '/mixtape/{mixtape_id}/'  # Set a default success URL
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         mixtape_id = self.kwargs.get('mixtape_id')
         context['mixtape'] = get_object_or_404(Mixtape, pk=mixtape_id)
         return context
-
-# Access mixtape from context
 
     def form_valid(self, form):
         mixtape_id = self.kwargs.get('mixtape_id')
@@ -78,5 +71,4 @@ class AddTrack(CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        mixtape_id = self.kwargs.get('mixtape_id')
-        return reverse('mixtape_detail', kwargs={'mixtape_id': mixtape_id})
+        return reverse('mixtape_detail', kwargs={'pk': self.kwargs.get('mixtape_id')})
