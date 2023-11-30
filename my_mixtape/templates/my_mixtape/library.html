@@ -21,6 +21,12 @@
                 <a href="{% url 'mixtape_detail' mixtape.id %}" class="btn btn-primary">View Mix Tape</a>
             </div>
         </div>
-    </div>
 {% endfor %}
+        <div class="container">
+        <a href="{% url 'add_mixtape' %}">
+            <button class="btn btn-primary">add +</button>
+        </a>
+    </div>
+    </div>
+
 {% endblock %}
