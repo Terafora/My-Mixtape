@@ -7,13 +7,13 @@
     <h1>Add Mixtape</h1>
     <div>
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1>Create Note</h1>
+        <h1>Mixtape Details</h1>
         {% csrf_token %}
         {{ form.media }}
         {{ form|crispy }}
         <div class=""text-centre>
             <button type=""submit
-                class="btn btn-primary mt-2">Add Note</button>
+                class="btn btn-primary mt-2">Add Mixtape</button>
         </div>
             </form>
     </div>
