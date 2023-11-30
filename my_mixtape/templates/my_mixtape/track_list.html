@@ -5,11 +5,8 @@
 {% block content %}
 <div class="container  justify-content-center text-center my-5 text-white">
     <h1>{{ mixtape.name }}</h1>
-    <p>{{ mixtape.about }}</p>
     <p>Created by {{ mixtape.collection }}</p>
-    <p>Created on {{ mixtape.created_on }}</p>
-    <p>Updated on {{ mixtape.updated_on }}</p>
-    <p>Tracks:</p>
+    <p>{{ mixtape.about }}</p>
     <div>
         {% for track in mixtape.tracks.all %}
         <a href="{{ track.url }}" target="_blank">
