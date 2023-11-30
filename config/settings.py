@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "cloudinary_storage",
     "django.contrib.sites",
 
 # allauth apps    
@@ -59,7 +60,6 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
     "cloudinary",
-    "cloudinary_storage",
     "djrichtextfield",
 
 ]
@@ -145,6 +145,11 @@ else:
     }
 
 
+CSRF_TRUSTED_ORIGINS = [
+"https://*.gitpod.io",
+"https://*.herokuapp.com"
+]
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -207,6 +212,8 @@ MIME_TYPES = {
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
+# May have to remove if static files are not working
+#may also have to change to STATICFILES_STORAGE up top 
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 # Default primary key field type
