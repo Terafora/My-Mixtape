@@ -102,7 +102,7 @@ class UpdateTrack(UpdateView):
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.object.mixtape_id})
 
-class DeleteTrack(DeleteView):
+class DeleteTrack(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """Delete a track"""
     model = Track
     
@@ -110,6 +110,11 @@ class DeleteTrack(DeleteView):
         # Obtain the mixtape_id from the URL kwargs
         mixtape_id = self.kwargs['mixtape_id']
         return reverse_lazy('mixtape_detail', kwargs={'mixtape_id': mixtape_id})
+    
+    # Additional test_func to ensure the user deleting the track is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def get_object(self, queryset=None):
         # Fetch the track based on both mixtape_id and track_id
