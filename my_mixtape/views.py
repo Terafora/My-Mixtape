@@ -23,7 +23,7 @@ class Library(ListView):
     context_object_name = 'user_mixtapes'
 
     def get_queryset(self):
-        return Mixtape.objects.filter(collection=self.request.user).values('id', 'name')
+        return Mixtape.objects.filter(collection=self.request.user).values('id', 'pk' ,'name')
 
 # Used for CRUD
 
@@ -53,7 +53,9 @@ class DeleteMixtape(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     success_url = '/library/'
 
     def test_func(self):
-        return self.request.user == self.get_object().user
+        mixtape = self.get_object()
+        return self.request.user == mixtape.collection
+
 
 
 # View for Track objects
