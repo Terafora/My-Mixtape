@@ -10,6 +10,7 @@
             {% csrf_token %}
             <p>Are you sure that you want to delete "{{ object.name }}"?</p>
             <input type="submit" value="Confirm" class="btn btn-primary w-25">
+            <a href="{% url 'library' %}" class="btn btn-secondary">Back</a>
         </form>
     </div>
 </div>
