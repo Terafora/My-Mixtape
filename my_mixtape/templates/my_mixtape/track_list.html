@@ -15,9 +15,10 @@
         </a>
             <p>{{ track.artist }}</p>
             <p>{{ track.album }}</p>
+            <a href="{% url 'update_track' track_id=track.pk %}" class="btn btn-disabled mt-2">Edit Track</a>
         {% endfor %}
     </div>
-    
+
     <div class="container">
         <a href=" {% url 'add_track' mixtape_id=mixtape.id %} ">
             <button class="btn btn-primary">Add Track</button>
