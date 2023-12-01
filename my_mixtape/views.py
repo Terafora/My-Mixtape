@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, ListView, CreateView, UpdateView, DetailView
+from django.views.generic import TemplateView, ListView, CreateView, UpdateView, DetailView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.db import models
@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from .models import Track, Mixtape
 
-# Point to the correct template
+# Point to the correct general templates
 
 class Index(TemplateView):
     """The home page for My Mixtape"""
@@ -23,7 +23,7 @@ class Library(ListView):
     context_object_name = 'user_mixtapes'
 
     def get_queryset(self):
-        return Mixtape.objects.filter(collection=self.request.user)
+        return Mixtape.objects.filter(collection=self.request.user).values('id', 'name')
 
 # Used for CRUD
 
@@ -47,9 +47,16 @@ class OpenTrackList(DetailView):
     context_object_name = 'mixtape'
     pk_url_kwarg = 'mixtape_id'
     
-    #def get_queryset(self):
-    #    mixtape_id = self.kwargs.get('mixtape_id')
-    #    return Track.objects.filter(mixtape=mixtape_id)
+class DeleteMixtape(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a mixtape"""
+    model = Mixtape
+    success_url = '/library/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
+# View for Track objects
 
 class AddTrack(CreateView):
     """Add a track to a mixtape"""
