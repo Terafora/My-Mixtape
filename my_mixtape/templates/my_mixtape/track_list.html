@@ -3,13 +3,13 @@
 {% block title %}{{ mixtape.name }}{% endblock %}
 
 {% block content %}
-<div class="container  justify-content-center text-center my-5 text-white">
+<div class="container justify-content-center text-center my-5 text-white">
     <h1>{{ mixtape.name }}</h1>
     <p>Created by {{ mixtape.collection }}</p>
     <p>{{ mixtape.about }}</p>
     <div>
         {% for track in mixtape.tracks.all %}
-        <a href="{{ track.url }}" target="_blank">
+        <a href="{{ track.song_link }}" target="_blank">
             <img src="{{ track.image.url }}" alt="{{ track.title }}">
             <h3>{{ track.title }}</h3>
         </a>
