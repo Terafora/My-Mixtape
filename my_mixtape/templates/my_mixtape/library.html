@@ -20,7 +20,7 @@
                     {% else %}
                         <span class="btn btn-primary disabled">View Mix Tape</span>
                     {% endif %}
-                    <a href="{% url 'delete_mixtape' mixtape_id=mixtape.id %}" class="btn btn-danger">Delete Mix Tape</a>
+                    <a href="{% url 'delete_mixtape' pk=mixtape.pk %}" class="btn btn-danger">Delete Mix Tape</a>
                 </div>
             </div>
         </div>
