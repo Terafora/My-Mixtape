@@ -48,21 +48,6 @@ GENRES = [
 
 # # Mixtape collection and Mixtape models
 
-
-# class Mixtape_Collection(models.Model):
-#     """A collection of mixtapes the user has created"""
-#     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtape_collections')
-#     name = models.CharField(max_length=200, null = False, blank = False)
-
-#     def __str__(self):
-#         return self.name
-    
-# # Signal to create a Mixtape_Collection instance upon user creation
-# @receiver(post_save, sender=User)
-# def create_user_mixtape_collection(sender, instance, created, **kwargs):
-#     if created:
-#         Mixtape_Collection.objects.create(owner=instance, name=f"{instance.username}'s Mixtapes")
-
 class Mixtape(models.Model):
     """A mixtape created by the user which will be in their collection"""
     collection = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtapes')
