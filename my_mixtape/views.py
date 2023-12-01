@@ -91,3 +91,12 @@ class AddTrack(CreateView):
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.kwargs.get('mixtape_id')})
 
+class UpdateTrack(UpdateView):
+    """Update a track"""
+    model = Track
+    fields = ['title', 'artist', 'genre', 'song_link']
+    template_name = "my_mixtape/update_track.html"
+    pk_url_kwarg = 'track_id'  # Replace 'track_id' with your actual URL keyword
+
+    def get_success_url(self):
+        return reverse('mixtape_detail', kwargs={'mixtape_id': self.object.mixtape_id})
