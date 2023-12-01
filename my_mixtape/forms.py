@@ -11,7 +11,7 @@ class NoteForm(forms.ModelForm):
         fields = ['title', 'note']
 
         widgets = {
-            "note": forms.Textarea(attrs={'rows': 5}),
+            "note": forms.Textarea(attrs={'rows': 2}),
         }
 
         labels = {
