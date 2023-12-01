@@ -4,6 +4,7 @@ from django.urls import reverse_lazy
 from django.db import models
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
+from django.http import HttpResponseRedirect
 from .models import Track, Mixtape
 
 # Point to the correct general templates
@@ -96,7 +97,31 @@ class UpdateTrack(UpdateView):
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
     template_name = "my_mixtape/update_track.html"
-    pk_url_kwarg = 'track_id'  # Replace 'track_id' with your actual URL keyword
+    pk_url_kwarg = 'track_id' 
 
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.object.mixtape_id})
+
+class DeleteTrack(DeleteView):
+    """Delete a track"""
+    model = Track
+    
+    def get_success_url(self):
+        # Obtain the mixtape_id from the URL kwargs
+        mixtape_id = self.kwargs['mixtape_id']
+        return reverse_lazy('mixtape_detail', kwargs={'mixtape_id': mixtape_id})
+
+    def get_object(self, queryset=None):
+        # Fetch the track based on both mixtape_id and track_id
+        mixtape_id = self.kwargs['mixtape_id']
+        track_id = self.kwargs['track_id']
+        track = Track.objects.get(mixtape_id=mixtape_id, pk=track_id)
+        return track
+
+    def delete(self, request, *args, **kwargs):
+        # Override the delete method to include mixtape_id in deletion criteria
+        mixtape_id = self.kwargs['mixtape_id']
+        track_id = self.kwargs['track_id']
+        track = self.get_object()
+        track.delete()
+        return HttpResponseRedirect(self.get_success_url())
