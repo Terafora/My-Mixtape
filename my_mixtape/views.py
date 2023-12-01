@@ -56,7 +56,7 @@ class AddTrack(CreateView):
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
     template_name = "my_mixtape/add_track.html"
-    success_url = '/mixtape/{mixtape_id}/'  # Set a default success URL
+    success_url = '/mixtape/{mixtape_id}/' 
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -71,4 +71,5 @@ class AddTrack(CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('mixtape_detail', kwargs={'pk': self.kwargs.get('mixtape_id')})
+        return reverse('mixtape_detail', kwargs={'mixtape_id': self.kwargs.get('mixtape_id')})
+
