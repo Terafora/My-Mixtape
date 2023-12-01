@@ -16,18 +16,22 @@
 
 html, body {
     height: 100%;
-    background-color: var(--color-background);
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
-    
+    background-color: var(--color-background);
 }
 
 main {
     flex: 1 0 auto;
     padding-bottom: 5rem;
+}
+
+.container {
+    background-color: var(--color-background);
 }
 
 h1, h2, h3 {
@@ -46,6 +50,10 @@ a {
 }
 
 /* Header */
+
+nav {
+    background-color: var(--color-background);
+}
 
 .nav-icon-svg {
     width: 4rem;
