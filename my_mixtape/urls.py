@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Index, About, Library, OpenTrackList, AddMixTape, AddTrack, DeleteMixtape, EditMixTape, UpdateTrack
+from .views import Index, About, Library, OpenTrackList, AddMixTape, AddTrack, DeleteMixtape, EditMixTape, UpdateTrack, DeleteTrack
 
 urlpatterns = [
     path('', Index.as_view(), name='home'),
@@ -11,4 +11,5 @@ urlpatterns = [
     path('mixtape/edit/<int:pk>/', EditMixTape.as_view(), name='edit_mixtape'),
     path('<int:mixtape_id>/add_track/', AddTrack.as_view(), name='add_track'),
     path('track/<int:track_id>/update/', UpdateTrack.as_view(), name='update_track'),
+    path('mixtape/<int:mixtape_id>/delete_track/<int:track_id>/', DeleteTrack.as_view(), name='delete_track'),
 ]
