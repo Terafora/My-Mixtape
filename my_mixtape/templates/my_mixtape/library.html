@@ -21,6 +21,7 @@
                         <span class="btn btn-primary disabled">View Mix Tape</span>
                     {% endif %}
                     <a href="{% url 'delete_mixtape' pk=mixtape.pk %}" class="btn btn-danger">Delete Mix Tape</a>
+                    <a href="{% url 'edit_mixtape' pk=mixtape.pk %}" class="btn btn-secondary">Edit Info</a>
                 </div>
             </div>
         </div>
