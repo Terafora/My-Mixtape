@@ -56,6 +56,15 @@ class DeleteMixtape(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         mixtape = self.get_object()
         return self.request.user == mixtape.collection
 
+class EditMixTape(UpdateView):
+    """Edit a mixtape"""
+    model = Mixtape
+    fields = ['name', 'image', 'image_alt', 'about', 'genre']
+    template_name = "my_mixtape/edit_mixtape.html"
+    success_url = '/library/'
+
+    def get_queryset(self):
+        return Mixtape.objects.filter(collection=self.request.user)
 
 
 # View for Track objects
