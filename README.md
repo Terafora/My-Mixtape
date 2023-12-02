@@ -66,7 +66,15 @@ They're also able to login and logout from the site so not only can they gain ac
 
 ### Unimplemented Features
 
+#### Animations
+
+Animations were planned for this website to bring it even more to life, however in the interest of meeting deadlines and prioritising what would have the most impact the decision was made to leave the inclusion of animation out of the scope of this project for the time being.
+An example of what was planned is below:
+
+![My Mixtape animated bg + Elements](https://github.com/Terafora/My-Mixtape/assets/144109245/54f1894d-edf3-46cd-a6e2-0080ae4f9998)
+
 <h2 align="center">Testing 🧪</h2>
+
 
 ### Validator Testing
 #### Coming Soon
