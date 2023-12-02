@@ -14,7 +14,24 @@ My Mixtape is a website where you can creates a your own mixtape using various l
 - Python / Django
 
 <h2 align="center">🎨 Design 🎨</h2>
-### Coming Soon
+<h3>Figma Design Boards</h3>
+
+The design for My Mixtape ended up being something inspired heavily by 80's synthwave aesthetics, however it was not always envisioned to be this way.
+On my first designs and vision for this site the original idea for the presentation was actually a lot more inspired by early 2010's "Hipster" culture.  In particular my inspiration was the HUD elements which were present in Life Is Strange which was released in the same time frame.
+
+Examples:
+
+- [Life Is Strange HUD Example Images 1](https://www.artstation.com/artwork/g2QBYK)
+- [Life Is Strange HUD Example Images 2](https://www.gameuidatabase.com/gameData.php?id=672)
+
+When I began to make this however I saw that there was a limited appeal to this design as we aren't far away enough from the early 2010's for this to be nostalgic, while also not close enough to this time period for there to be a broad appeal. It's at this point that I decided to change gears and change up the design with what you see in the live product. The asymetrical, curvy designs were instead made into sleak straight neon lit lines. Unlike the culture of the early 2010's nostalgia for the 80's has been a hot commodity for a seeimgly long time now and with the idea of the site revolving around mixtapes the synthesis of the two was a no brainer, and so you have what you see today.
+
+![Cassette Tape Icons](https://github.com/Terafora/My-Mixtape/assets/144109245/10da6610-38cb-4439-a282-d3e0077ebf6e)
+
+There was more designed than what made it to what is currently the final product and you may be curious about what those other assets may be so I'm providing a link to my Figma design boards below to that you can take a look yourself at what could have been, how my site was envisioned, and some hints at what may be coming in the future.
+(Please note this does not contain information or assets about the site prior to changing the theming an 80's synthwave aesthetic)
+
+- [The Figma board for My Mixtape](https://shorturl.at/hmqzT)
 
 <h2 align="center">Features</h2>
 
