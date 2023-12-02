@@ -7,24 +7,25 @@
     <h1>{{ mixtape.name }}</h1>
     <p>Created by {{ mixtape.collection }}</p>
     <div>{{ mixtape.about | safe }}</div>
-    <div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         {% for track in mixtape.tracks.all %}
-        <a href="{{ track.song_link }}" target="_blank">
-            <img src="{{ track.image.url }}" alt="{{ track.title }}">
-            <h3>{{ track.title }}</h3>
-        </a>
+        <div class="col">
+            <a href="{{ track.song_link }}" target="_blank">
+                <img src="{{ track.image.url }}" alt="{{ track.title }}">
+                <h3>{{ track.title }}</h3>
+            </a>
             <p>{{ track.artist }}</p>
             <p>{{ track.album }}</p>
             <a href="{% url 'update_track' track_id=track.pk %}" class="btn btn-disabled mt-2">Edit Track</a>
             <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn btn-danger">Delete Track</a>
+        </div>
         {% endfor %}
     </div>
 
     <div class="container">
-        <a href=" {% url 'add_track' mixtape_id=mixtape.id %} ">
+        <a href="{% url 'add_track' mixtape_id=mixtape.id %}">
             <button class="btn btn-primary">Add Track</button>
         </a>
-
     </div>
 </div>
 {% endblock %}
