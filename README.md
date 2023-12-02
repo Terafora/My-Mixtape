@@ -9,9 +9,10 @@ My Mixtape is a website where you can creates a your own mixtape using various l
 <h2 align="center">💻 Technologies 💻</h2>
 
 - HTML
-- CSS
+- CSS / Bootstrap 5
 - JavaScript
 - Python / Django
+- Figma
 
 <h2 align="center">🎨 Design 🎨</h2>
 <h3>Figma Design Boards</h3>
@@ -44,7 +45,7 @@ My Mixtape allows users to:
 
 ### Homepage 🏠
 
-The homepage gives users a little glimpse at the site and gives the general idea of what my Mixtape is all about.
+The homepage gives users a little glimpse at the site and gives the general idea of what My Mixtape is all about.
 
 ### About ❓
 
@@ -52,17 +53,19 @@ The about page goes a little in depth with what My Mixtape is all about, the pro
 
 ### Library 📖
 
-The library page is where the magic begins to happen. From here users can create their own mixtapes.
+The library page is where the magic begins to happen. From here users can create their own mixtapes and what mixtapes they've already created and have stored.
 
 ### Mixtapes 🖭
 
-Inside each created mixtape is the view for users to create edit and delete tracks for their mixtapes.
-In here users are able to go through the tracks they have added and enjoy what they have collected on their personalised mixtape.
+Inside each created mixtape is the view for users to create edit and delete tracks for their mixtapes as well as update the associated information for the mixtape.
+In here users are able to go through the tracks they have added and enjoy what they have collected on their personalised mixtape as well as add, delete and edit the tracks on the associated mixtape.
+At the top of the page is a share mixtape button which saves the url to the mixtape to the user's clipboard so they can share their mixes with friends and at the bottom of the page is an edit mixtape info button.
 
 ### Login/Logout/Signup 🔒
 
-Nothing could be personalised though without the use of account and My Mixtape brings the ability for users to sign up with the website so that they can get to work making mixtapes.
+Nothing could be personalised though without the use of accounts and My Mixtape brings the ability for users to sign up with the website so that they can get to work making mixtapes.
 They're also able to login and logout from the site so not only can they gain access to their mixtapes wherever they are but they can also keep their accounts secure with logging out.
+A further benefit to this functionality is that it means users can create, edit and delete their own mixtapes and tracks, but are not able to do the same to other user's objects.
 
 ### Unimplemented Features
 
@@ -87,6 +90,7 @@ An example of what was planned is below:
 - My Mixtape's front-end was deployed to Heroku
   - Using a procfile and requirements.txt Heroku was able to successfully deploy the site
   - The appropriate env variables were setup to allow the app to run as expected.
+  - Django settings were setup and further refined throughout the progress of this project to ensure the smooth running and transition of the site as it went from running on a local server to displaying on live. 
 
 - My Mixtape's backend was hosted by ElephantSQL
   - The backend is a PostgreSQL database.
@@ -95,7 +99,10 @@ An example of what was planned is below:
 <h2 align="center">Credits</h2>
 
 ### Content 📰
-#### Coming Soon
+
+- All the content on this site was created using Figma.
+- Same as above you can view my Figma board to see the assets I created [here](https://shorturl.at/hmqzT) so please enjoy.
+- On the above Figma board you will also see some of the images and photographs which I took inspiration from aptly titled "inspiration board".
 
 ### Images 🖼️
 #### Coming Soon
