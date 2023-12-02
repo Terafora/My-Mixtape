@@ -23,6 +23,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--color-background);
+    background-image: url('{% static "./images/background_grid.svg" %}');
+    background-size: cover;
+    background-position: center; 
 }
 
 main {
