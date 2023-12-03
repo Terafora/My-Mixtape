@@ -59,11 +59,15 @@ class Mixtape(models.Model):
     genre = models.CharField(max_length=33, choices=GENRES, default = 'Misc.')
     posted_date = models.DateTimeField(auto_now=True)
 
+class Post(models.Model):
+    featured_image = CloudinaryField(
+        'image',
+        default='placeholder'
+    )
+
     def __str__(self):
         return f"{self.name}"
     
-    class Meta:
-        ordering = ['-posted_date']
 
 class Track(models.Model):
     """A track in a mixtape"""
