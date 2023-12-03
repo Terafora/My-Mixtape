@@ -11,23 +11,25 @@
 <div class="container mt-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
         {% for mixtape in user_mixtapes %}
-            {% if mixtape.id %}
-                <div class="col">
-                    <div class="card">
-                        <img {% if "placeholder" in post.featured_image.url %} src="{% static 'images/mixtape_icon.svg' %}" {% else %} src="{{ post.featured_image_url }}" {% endif %} class="card-img-top" {% if mixtape.image_alt %} alt="{{ mixtape.image_alt }}" {% else %} alt="{{ mixtape.name }}"{% endif %}>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ mixtape.name }}</h5>
-                            {% if mixtape.pk %}
-                                <a href="{% url 'mixtape_detail' mixtape.pk %}" class="btn btn-primary">View Mix Tape</a>
-                            {% else %}
-                                <span class="btn btn-primary disabled">View Mix Tape</span>
-                            {% endif %}
-                            <a href="{% url 'delete_mixtape' pk=mixtape.pk %}" class="btn btn-danger">Delete Mix Tape</a>
-                            <a href="{% url 'edit_mixtape' pk=mixtape.pk %}" class="btn btn-secondary">Edit Info</a>
-                        </div>
+            <div class="col">
+                <div class="card">
+                    {% if mixtape.image.url %}
+                        <img src="{{ mixtape.image.url }}" class="card-img-top" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
+                    {% else %}
+                        <img src="{% static 'path/to/placeholder/image.png' %}" class="card-img-top" alt="PMixtape Image">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ mixtape.name }}</h5>
+                        {% if mixtape.pk %}
+                            <a href="{% url 'mixtape_detail' mixtape.pk %}" class="btn btn-primary">View Mix Tape</a>
+                        {% else %}
+                            <span class="btn btn-primary disabled">View Mix Tape</span>
+                        {% endif %}
+                        <a href="{% url 'delete_mixtape' pk=mixtape.pk %}" class="btn btn-danger">Delete Mix Tape</a>
+                        <a href="{% url 'edit_mixtape' pk=mixtape.pk %}" class="btn btn-secondary">Edit Info</a>
                     </div>
                 </div>
-            {% endif %}
+            </div>
         {% endfor %}
     </div>
 </div>
