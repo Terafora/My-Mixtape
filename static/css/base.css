@@ -35,6 +35,8 @@ main {
 
 .container {
     background-color: var(--color-background);
+    max-width: 1025px;
+    min-height: 80vh;
 }
 
 h1, h2, h3 {
@@ -58,11 +60,6 @@ a {
 hr {
   width: 50%;
   margin: 50px auto;
-}
-
-.container {
-    max-width: 1025px;
-    min-height: 80vh;
 }
 
 /* Scroll Bar Stylings */
