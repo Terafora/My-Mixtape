@@ -51,16 +51,16 @@ INSTALLED_APPS = [
     "allauth.account",
     "allauth.socialaccount",
 
-# local apps
-
-    "my_mixtape",
-
 # 3rd party apps
 
     "crispy_forms",
     "crispy_bootstrap5",
     "cloudinary",
     "djrichtextfield",
+
+# local apps
+
+    "my_mixtape",
 
 ]
 
