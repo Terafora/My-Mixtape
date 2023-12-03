@@ -82,10 +82,11 @@ An example of what was planned is below:
 ### Validator Testing
 #### Coming Soon
 
-### Unfixed Bugs
-#### Coming Soon
+### Unfixed Bugs 🪳
 
-<h2 align="center">Deployment</h2>
+- Link in footer to personal portfolio site isn't connecting properly. The link should be correct, however there are issues with my deployment for the site via Github pages at the time of writing so this should be resolved seperate from the project.
+
+<h2 align="center">Deployment 🚀</h2>
 
 - My Mixtape's front-end was deployed to Heroku
   - Using a procfile and requirements.txt Heroku was able to successfully deploy the site
@@ -100,7 +101,7 @@ An example of what was planned is below:
 
 ### Content 📰
 
-- All the content on this site was created using Figma.
+- All the content on this site was created myself using Figma and in some places LottieLabs.
 - Same as above you can view my Figma board to see the assets I created [here](https://shorturl.at/hmqzT) so please enjoy.
 - On the above Figma board you will also see some of the images and photographs which I took inspiration from aptly titled "inspiration board".
 
