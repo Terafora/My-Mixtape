@@ -4,6 +4,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from djrichtextfield.models import RichTextField
 from django_resized import ResizedImageField
+from cloudinary.models import CloudinaryField
 
 
 # Genre choices for mixtapes
@@ -52,7 +53,7 @@ class Mixtape(models.Model):
     """A mixtape created by the user which will be in their collection"""
     collection = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtapes')
     name = models.CharField(max_length=200, null = False, blank = False)
-    image = ResizedImageField(size=[400, None], quality=75, upload_to='my_mixtape/', force_format='WEBP', null = True, blank = True)
+    image = CloudinaryField('image', default='placeholder')
     image_alt = models.CharField(max_length=100, null = True, blank = True)
     about = RichTextField(max_length= 1000 ,null = True, blank = True)
     genre = models.CharField(max_length=33, choices=GENRES, default = 'Misc.')
