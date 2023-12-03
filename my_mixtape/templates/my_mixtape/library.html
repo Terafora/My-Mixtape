@@ -5,22 +5,20 @@
 
 {% block content %}
 <div class="container justify-content-center text-center mt-5">
-    <h1>Your Mix Tapes</h1>
-</div>
-
-<div class="container mt-5">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
+    <h1 class= "my-5">Your Mix Tapes</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
         {% for mixtape in user_mixtapes %}
             <div class="col">
-                <div class="card">
-                    {% if mixtape.image.url %}
+                <div class="card bg-black">
+                   <!-- {% if mixtape.image.url %}
                         <img src="{{ mixtape.image.url }}" class="card-img-top" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
                         <p>{{ mixtape.image.url }}</p>
                     {% else %}
-                        <img src="{% static 'path/to/placeholder/image.png' %}" class="card-img-top" alt="Mixtape Image">
-                    {% endif %}
+                        <img src="{% static 'images/mixtape_icon.svg' %}" class="card-img-top" alt="Mixtape Image">
+                    {% endif %} -->
+                    <img src="{% static 'images/mixtape_icon.svg' %}" alt="mixtape icon" class="mix-icon">
                     <div class="card-body">
-                        <h5 class="card-title">{{ mixtape.name }}</h5>
+                        <h3 class="card-title text-white">{{ mixtape.name }}</h3>
                         {% if mixtape.pk %}
                             <a href="{% url 'mixtape_detail' mixtape.pk %}" class="btn btn-primary">View Mix Tape</a>
                         {% else %}
@@ -33,11 +31,8 @@
             </div>
         {% endfor %}
     </div>
-</div>
-
-<div class="container justify-content-center text-center mt-5">
     <a href="{% url 'add_mixtape' %}">
-        <button class="btn btn-primary">Add Mix Tape</button>
+        <button class="btn btn-primary ">Add Mix Tape</button>
     </a>
 </div>
 {% endblock %}
