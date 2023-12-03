@@ -15,6 +15,7 @@
                 <div class="card">
                     {% if mixtape.image.url %}
                         <img src="{{ mixtape.image.url }}" class="card-img-top" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
+                        <p>{{ mixtape.image.url }}</p>
                     {% else %}
                         <img src="{% static 'path/to/placeholder/image.png' %}" class="card-img-top" alt="Mixtape Image">
                     {% endif %}
@@ -39,5 +40,4 @@
         <button class="btn btn-primary">Add Mix Tape</button>
     </a>
 </div>
-
 {% endblock %}
