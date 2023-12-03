@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
 from .models import Track, Mixtape
+from .forms import MixtapeForm
 
 # Point to the correct general templates
 
@@ -33,7 +34,7 @@ class Library(ListView):
 class AddMixTape(CreateView):
     """Add a mixtape to a mixtape collection"""
     model = Mixtape
-    fields = ['name', 'image', 'image_alt', 'about', 'genre']
+    form_class = MixtapeForm  # Use your custom form class here
     template_name = "my_mixtape/add_mixtape.html"
     success_url = '/library/'
 
