@@ -14,7 +14,7 @@
             {% if mixtape.id %}
                 <div class="col">
                     <div class="card">
-                        <img {% if "placeholder" in post.featured_image.url %} src="{% static 'images.mixtape.image' %}" {% else %} src="{{ post.featured_image_url }}" {% endif %} class="card-img-top" {% if mixtape.image_alt %} alt="{{ mixtape.image_alt }}" {% else %} alt="{{ mixtape.name }}"{% endif %}>
+                        <img {% if "placeholder" in post.featured_image.url %} src="{% static 'images/mixtape_icon.svg' %}" {% else %} src="{{ post.featured_image_url }}" {% endif %} class="card-img-top" {% if mixtape.image_alt %} alt="{{ mixtape.image_alt }}" {% else %} alt="{{ mixtape.name }}"{% endif %}>
                         <div class="card-body">
                             <h5 class="card-title">{{ mixtape.name }}</h5>
                             {% if mixtape.pk %}

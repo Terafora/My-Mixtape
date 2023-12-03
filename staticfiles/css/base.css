@@ -45,12 +45,17 @@ h1, h2, h3 {
 h1 {
     font-size: 6rem;
     margin: 0;
-
 }
 
 a {
     text-decoration: none;
 }
+
+hr {
+  width: 50%;
+  margin: 50px auto;
+}
+
 
 /* Scroll Bar Stylings */
 
