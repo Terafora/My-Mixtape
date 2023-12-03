@@ -105,6 +105,22 @@ nav {
     color: var(--pink);
 }
 
+.nav-shadow {
+    -webkit-box-shadow: var(--box-shadow); 
+    box-shadow: var(--box-shadow);
+}
+
+.create-btn {
+    border-radius: 8px;
+    background-color: var(--pink);
+    transition: 0.3s;
+}
+
+.create-btn:hover{
+    background-color: var(--blue);
+    color: var(--color-background);
+}
+
 /* Home */
 
 #logo {
@@ -117,14 +133,8 @@ nav {
     );
 }
 
-/* Header */
-
-.nav-shadow {
-    -webkit-box-shadow: var(--box-shadow); 
-    box-shadow: var(--box-shadow);
-}
-
 /* Footer*/
+
 footer {
     flex-shrink: 0;
     background-color: var(--color-background);
