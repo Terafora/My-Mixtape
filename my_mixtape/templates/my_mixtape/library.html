@@ -16,7 +16,7 @@
                     {% if mixtape.image.url %}
                         <img src="{{ mixtape.image.url }}" class="card-img-top" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
                     {% else %}
-                        <img src="{% static 'path/to/placeholder/image.png' %}" class="card-img-top" alt="PMixtape Image">
+                        <img src="{% static 'path/to/placeholder/image.png' %}" class="card-img-top" alt="Mixtape Image">
                     {% endif %}
                     <div class="card-body">
                         <h5 class="card-title">{{ mixtape.name }}</h5>
