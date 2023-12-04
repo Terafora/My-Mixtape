@@ -11,7 +11,7 @@
         {% for track in mixtape.tracks.all %}
         <div class="col">
             <a href="{{ track.song_link }}" target="_blank">
-                <img src="{{ track.image.url }}" alt="{{ track.title }}">
+                <img src="{% static "images/cassette_tape.svg" %}" alt="{{ track.title }}">
                 <h3>{{ track.title }}</h3>
             </a>
             <p>{{ track.artist }}</p>
