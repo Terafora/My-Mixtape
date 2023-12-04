@@ -1,6 +1,6 @@
-const shareBtn = document.getElementById("share")
+const shareBtn = document.getElementById("share");
 
-shareBtn.addEventListener("click", copyMixtapeLink)
+shareBtn.addEventListener("click", copyMixtapeLink);
 
 /**
  * Takes current page's URL string and copies it to
