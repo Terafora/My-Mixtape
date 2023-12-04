@@ -71,7 +71,7 @@ class EditMixTape(UpdateView):
 
 # View for Track objects
 
-class AddTrack(LoginRequiredMixin, UserPassesTestMixin, CreateView):
+class AddTrack(CreateView):
     """Add a track to a mixtape"""
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
@@ -84,11 +84,6 @@ class AddTrack(LoginRequiredMixin, UserPassesTestMixin, CreateView):
         context['mixtape'] = get_object_or_404(Mixtape, pk=mixtape_id)
         return context
     
-    # Additional test_func to ensure the user adding the track is the creator
-    def test_func(self):
-        mixtape = self.get_object().mixtape
-        return self.request.user == mixtape.collection
-
     def form_valid(self, form):
         mixtape_id = self.kwargs.get('mixtape_id')
         mixtape = get_object_or_404(Mixtape, pk=mixtape_id)
