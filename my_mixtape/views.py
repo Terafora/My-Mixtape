@@ -71,7 +71,7 @@ class EditMixTape(UpdateView):
 
 # View for Track objects
 
-class AddTrack(CreateView):
+class AddTrack(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     """Add a track to a mixtape"""
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
@@ -83,6 +83,11 @@ class AddTrack(CreateView):
         mixtape_id = self.kwargs.get('mixtape_id')
         context['mixtape'] = get_object_or_404(Mixtape, pk=mixtape_id)
         return context
+    
+    # Additional test_func to ensure the user adding the track is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def form_valid(self, form):
         mixtape_id = self.kwargs.get('mixtape_id')
@@ -93,12 +98,17 @@ class AddTrack(CreateView):
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.kwargs.get('mixtape_id')})
 
-class UpdateTrack(UpdateView):
+class UpdateTrack(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Update a track"""
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
     template_name = "my_mixtape/update_track.html"
     pk_url_kwarg = 'track_id' 
+
+    # Additional test_func to ensure the user editing the track is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.object.mixtape_id})
