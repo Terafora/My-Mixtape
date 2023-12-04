@@ -72,7 +72,7 @@ class EditMixTape(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     # Additional test_func to ensure the user editing the mixtape is the creator
     def test_func(self):
-        mixtape = self.get_object().mixtape
+        mixtape = self.get_object()
         return self.request.user == mixtape.collection
 
     def get_queryset(self):
@@ -102,7 +102,8 @@ class AddTrack(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     
     # Additional test_func to ensure the user adding the track is the creator
     def test_func(self):
-        mixtape = self.get_object().mixtape
+        mixtape_id = self.kwargs.get('mixtape_id')
+        mixtape = get_object_or_404(Mixtape, pk=mixtape_id)
         return self.request.user == mixtape.collection
 
     def get_success_url(self):
