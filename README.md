@@ -105,7 +105,7 @@ A further benefit to this functionality is that it means users can create, edit 
 ### Images 🖼️
 #### Coming Soon
 
-<h2 align="center">Where to find more of my work 👇</h2>
+## Where to find more of my work 👇
 
 - [My Github](https://github.com/Terafora)
 - [My Portfolio](https://terafora.github.io/Portfolio-Site/)
