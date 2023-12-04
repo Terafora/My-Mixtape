@@ -13,7 +13,7 @@
                     {% if mixtape.pk %}
                         <a href="{% url 'mixtape_detail' mixtape.pk %}">
                             {% if mixtape.image.url != "http://res.cloudinary.com/djrh6ryfr/image/upload/placeholder" %}
-                                <img src="{{ mixtape.image.url }}" class="card-img-top img-fluid w-100" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
+                                <img src="{{ mixtape.image.url }}" class="card-img-top img-fluid w-100 card-pic" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
                             {% else %}
                                 <img src="{% static 'images/mixtape_icon.svg' %}" class="card-img-top img-fluid w-100 mix-icon" alt="Mixtape Image">
                             {% endif %}
