@@ -10,13 +10,11 @@
         {% for mixtape in user_mixtapes %}
             <div class="col">
                 <div class="card bg-black">
-                   <!-- {% if mixtape.image.url %}
+                   {% if mixtape.image.url %}
                         <img src="{{ mixtape.image.url }}" class="card-img-top" alt="{% if mixtape.image_alt %}{{ mixtape.image_alt }}{% else %}{{ mixtape.name }}{% endif %}">
-                        <p>{{ mixtape.image.url }}</p>
                     {% else %}
                         <img src="{% static 'images/mixtape_icon.svg' %}" class="card-img-top" alt="Mixtape Image">
-                    {% endif %} -->
-                    <img src="{% static 'images/mixtape_icon.svg' %}" alt="mixtape icon" class="mix-icon">
+                    {% endif %}
                     <div class="card-body">
                         <h3 class="card-title text-white">{{ mixtape.name }}</h3>
                         {% if mixtape.pk %}
