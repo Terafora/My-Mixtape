@@ -35,7 +35,7 @@ main {
 
 .container {
     background-color: var(--color-background);
-    max-width: 1025px;
+    max-width: 1200px;
     min-height: 80vh;
 }
 
@@ -64,25 +64,21 @@ hr {
 
 /* Scroll Bar Stylings */
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
     background: var(--color-background); 
     
   }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+
+::-webkit-scrollbar-thumb {
     background: #1a1a1a; 
     border-radius: 5px;
   }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
 
