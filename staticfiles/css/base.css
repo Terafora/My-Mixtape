@@ -173,6 +173,12 @@ footer {
     );
 }
 
+.boombox {
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 1;
+}
+
 /* Library */
 
 .bg-black{
@@ -182,4 +188,12 @@ footer {
 .mix-icon {
     max-height: 150px;
     width: auto;
+}
+
+/* Track List */
+
+.tracklistimg {
+    max-height: 100px;
+    width: auto;
+    padding: 1rem;
 }
