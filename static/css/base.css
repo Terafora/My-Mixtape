@@ -222,6 +222,13 @@ footer {
     padding: 44.5px 0;
 }
 
+.card-pic {
+    min-height: 300px;
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 
 /* Track List */
