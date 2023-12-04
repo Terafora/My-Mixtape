@@ -85,7 +85,8 @@ An example of what was planned is below:
 ### Unfixed Bugs 🪳
 
 - Link in footer to personal portfolio site isn't connecting properly. The link should be correct, however there are issues with my deployment for the site via Github pages at the time of writing so this should be resolved seperate from the project.
-
+- Trying to add a track to another users mixtape, though successfully at preventing this throws an internal server error.
+  
 <h2 align="center">Deployment 🚀</h2>
 
 - My Mixtape's front-end was deployed to Heroku
