@@ -3,17 +3,16 @@
 {% block title %}Edit Mixtape{% endblock %}
 
 {% block content %}
-<div class="container justify-content-center text-center mt-5 text-white">
+<div class="container justify-content-center text-center mt-5 text-white change-form">
     <h1>Edit Mixtape</h1>
     <div>
-    <form method="POST" enctype="multipart/form-data" class="p-2 form">
-        <h1>Edit Mixtape Details</h1>
+    <form method="POST" enctype="multipart/form-data" class="p-5 form">
         {% csrf_token %}
         {{ form.media }}
         {{ form|crispy }}
         <div class="text-centre">
             <button type="submit"
-                class="btn btn-primary mt-2">Edit Mixtape
+                class="btn edit mt-2">Edit Mixtape
             </button>
             <a href="{% url 'library' %}" class="btn btn-secondary mt-2">Back</a>
         </div>
