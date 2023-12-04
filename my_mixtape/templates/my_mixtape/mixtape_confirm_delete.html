@@ -3,13 +3,13 @@
 {% block title %}Delete Mixtape{{object.name}}{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container justify-content-center text-center text-white change-form">
     <h1 class="text-center h2">Confirm Mixtape Deletion</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %}
             <p>Are you sure that you want to delete "{{ object.name }}"?</p>
-            <input type="submit" value="Confirm" class="btn btn-primary w-25">
+            <input type="submit" value="Confirm" class="btn delete w-25 mx-3">
             <a href="{% url 'library' %}" class="btn btn-secondary">Back</a>
         </form>
     </div>
