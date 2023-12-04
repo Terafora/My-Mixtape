@@ -74,8 +74,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'allauth.account.middleware.AccountMiddleware',
-    "django.middleware.security.SecurityMiddleware",
-    
+       
 ]
 
 SITE_ID = 1
@@ -209,14 +208,6 @@ MIME_TYPES = {
 
 
 # Cloudinary Settings
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.environ.get('CLOUD_NAME'),
-    'API_KEY': os.environ.get('API_KEY'),
-    'API_SECRET': os.environ.get('API_SECRET'),
-}
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # May have to remove if static files are not working
 #may also have to change to STATICFILES_STORAGE up top 
