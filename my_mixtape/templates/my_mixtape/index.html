@@ -8,12 +8,15 @@
 <div class="container text-center text-white align-items-center justify-content-center">
     <img src="{% static 'images/my_mix_tape_logo.svg' %}" id="logo" alt="my mix tape logo" class="img-fluid mb-4">
     <h1 class="d-none">Home</h1>
-    <div class="row px-md-5">
+    <div class="row px-md-5 justify-content-center">
         <div class="col-lg-12">
             <h2 class="h1">Welcome to My Mix Tape</h2>
         </div>
         <div class="col-lg-6 py-3 py-md-5">
-            <img src="{% static 'images/cassette_tape.svg' %}" alt="Cassette image">
+            <video autoplay muted loop>
+                <source src="https://res.cloudinary.com/djrh6ryfr/video/upload/v1701724095/Cassette_Tape_qnjako.mp4" type="video/mp4">
+                <img src="{% static 'images/cassette_tape.svg' %}" alt="Cassette image">
+              </video>
         </div>
         <div class="col-lg-6 py-3 py-md-5">
             <p>Welcome to My Mixtape, the ultimate platform for curating your personalized musical journey! Here, you have the power to craft your own mixtapes, weaving together a symphony of songs discovered from every corner of the internet. Unleash your creativity by compiling tracks that resonate with your mood, style, and story, seamlessly linking users to the melodies that move you. With My Mixtape, sharing isn't just about songs; it's about sharing a piece of your soul, letting your friends groove to the rhythm of your discoveries. Dive in, explore, and craft sonic experiences that speak volumes about who you are.</p>
@@ -22,7 +25,11 @@
             <p>At My Mixtape, our mission transcends mere playlists; it's about fostering connections through the universal language of music. Dive deeper into the realm of sonic exploration as you traverse the melodies meticulously crafted by friends and fellow enthusiasts. Discover, share, and immerse yourself in an ever-evolving musical landscape where every mixtape tells a unique tale. Our platform is your canvas—express yourself, inspire others, and embark on an auditory adventure that knows no bounds. Join us in celebrating the art of curation, where each mixtape is not just a compilation but a narrative waiting to be shared, felt, and cherished. Welcome to My Mixtape—a symphony of discovery and connection in every beat.</p>
         </div>
         <div class="col-lg-6 py-3 py-md-5">
-            <img src="{% static 'images/play.svg' %}" class="mt-5" alt="Press play image">
+            <video autoplay muted loop>
+                <source src="https://res.cloudinary.com/djrh6ryfr/video/upload/v1701724666/playbutton_b5vjda.mp4" type="video/mp4">
+                <img src="{% static 'images/play.svg' %}" class="mt-5" alt="Press play image">
+              </video>
+        </div>
         </div>
     </div>
 </div>
