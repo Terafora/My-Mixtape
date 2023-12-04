@@ -25,18 +25,23 @@ class Library(ListView):
     context_object_name = 'user_mixtapes'
 
     def get_queryset(self):
-        return Mixtape.objects.filter(collection=self.request.user).values('id', 'pk' ,'name')
+        return Mixtape.objects.filter(collection=self.request.user)
 
 # Used for CRUD
 
 # Views for mixtape objects
 
-class AddMixTape(CreateView):
+class AddMixTape(LoginRequiredMixin, CreateView):
     """Add a mixtape to a mixtape collection"""
     model = Mixtape
     form_class = MixtapeForm  # Use your custom form class here
     template_name = "my_mixtape/add_mixtape.html"
     success_url = '/library/'
+
+    # Additional test_func to ensure the user adding a mixtape is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def form_valid(self, form):
         form.instance.collection = self.request.user
@@ -58,12 +63,17 @@ class DeleteMixtape(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         mixtape = self.get_object()
         return self.request.user == mixtape.collection
 
-class EditMixTape(UpdateView):
+class EditMixTape(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """Edit a mixtape"""
     model = Mixtape
     fields = ['name', 'image', 'image_alt', 'about', 'genre']
     template_name = "my_mixtape/edit_mixtape.html"
     success_url = '/library/'
+
+    # Additional test_func to ensure the user editing the mixtape is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def get_queryset(self):
         return Mixtape.objects.filter(collection=self.request.user)
@@ -71,7 +81,7 @@ class EditMixTape(UpdateView):
 
 # View for Track objects
 
-class AddTrack(CreateView):
+class AddTrack(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     """Add a track to a mixtape"""
     model = Track
     fields = ['title', 'artist', 'genre', 'song_link']
@@ -89,6 +99,11 @@ class AddTrack(CreateView):
         mixtape = get_object_or_404(Mixtape, pk=mixtape_id)
         form.instance.mixtape = mixtape
         return super().form_valid(form)
+    
+    # Additional test_func to ensure the user adding the track is the creator
+    def test_func(self):
+        mixtape = self.get_object().mixtape
+        return self.request.user == mixtape.collection
 
     def get_success_url(self):
         return reverse('mixtape_detail', kwargs={'mixtape_id': self.kwargs.get('mixtape_id')})
