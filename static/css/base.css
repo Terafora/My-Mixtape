@@ -173,6 +173,12 @@ footer {
     );
 }
 
+.boombox {
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 1;
+}
+
 /* Library */
 
 .bg-black{
