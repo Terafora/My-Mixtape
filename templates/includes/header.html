@@ -4,7 +4,9 @@
   {% with request.resolver_match.url_name as url_name %}
   <nav class="navbar navbar-expand-lg nav-shadow align-items-baseline">
     <div class="container-fluid">
-      <img src="{% static 'images/logo.svg' %}" class="nav-icon-svg" alt="My Mixtape Logo Temp">
+      <a class="navbar-brand text-light d-none d-md-inline" href="{% url 'home' %}">
+        <img src="{% static 'images/logo.svg' %}" class="nav-icon-svg" alt="My Mixtape Logo Temp">
+      </a>
       <a class="navbar-brand text-light d-none d-md-inline" href="{% url 'home' %}">My Mix Tape</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
