@@ -1,12 +1,12 @@
-<h1 align="center">🖭 My-Mixtape 🖭</h1>
+# 🖭 My-Mixtape 🖭
 
-<h2 align="center">About</h2>
+## About
 
 My Mixtape is a website where you can creates a your own mixtape using various links to songs you enjoy from across the web so that you have all your favourite songs and music video in one centralised location which you can share with your friends. This project uses HTML, CSS, JavaScript for font-end operations, and Django for the backend. As a personal challenge I've also made sure to create all the art assets used by the sites myself using a combination of Figma, and LottieLabs. The site featurea an account system when users can log into a private account so that they can keep their mixtapes private and uneditable friom other users.
 
 ![スクリーンショット 2023-11-26 155839](https://github.com/Terafora/My-Mixtape/assets/144109245/77861062-363d-4ada-abc7-7fa0910d4a67)
 
-<h2 align="center">💻 Technologies 💻</h2>
+## 💻 Technologies 💻
 
 - HTML
 - CSS / Bootstrap 5
@@ -14,8 +14,8 @@ My Mixtape is a website where you can creates a your own mixtape using various l
 - Python / Django
 - Figma
 
-<h2 align="center">🎨 Design 🎨</h2>
-<h3>Figma Design Boards</h3>
+## 🎨 Design 🎨
+### Figma Design Boards
 
 The design for My Mixtape ended up being something inspired heavily by 80's synthwave aesthetics, however it was not always envisioned to be this way.
 On my first designs and vision for this site the original idea for the presentation was actually a lot more inspired by early 2010's "Hipster" culture.  In particular my inspiration was the HUD elements which were present in Life Is Strange which was released in the same time frame.
@@ -34,7 +34,7 @@ There was more designed than what made it to what is currently the final product
 
 - [The Figma board for My Mixtape](https://shorturl.at/hmqzT)
 
-<h2 align="center">Features</h2>
+## Features
 
 My Mixtape allows users to:
 
@@ -69,14 +69,9 @@ A further benefit to this functionality is that it means users can create, edit 
 
 ### Unimplemented Features
 
-#### Animations
+### Coming Soon
 
-Animations were planned for this website to bring it even more to life, however in the interest of meeting deadlines and prioritising what would have the most impact the decision was made to leave the inclusion of animation out of the scope of this project for the time being.
-An example of what was planned is below:
-
-![My Mixtape animated bg + Elements](https://github.com/Terafora/My-Mixtape/assets/144109245/54f1894d-edf3-46cd-a6e2-0080ae4f9998)
-
-<h2 align="center">Testing 🧪</h2>
+## Testing 🧪
 
 
 ### Validator Testing
@@ -87,7 +82,7 @@ An example of what was planned is below:
 - Link in footer to personal portfolio site isn't connecting properly. The link should be correct, however there are issues with my deployment for the site via Github pages at the time of writing so this should be resolved seperate from the project.
 - Trying to add a track to another users mixtape, though successfully at preventing this throws an internal server error.
   
-<h2 align="center">Deployment 🚀</h2>
+## Deployment 🚀
 
 - My Mixtape's front-end was deployed to Heroku
   - Using a procfile and requirements.txt Heroku was able to successfully deploy the site
@@ -96,9 +91,10 @@ An example of what was planned is below:
 
 - My Mixtape's backend was hosted by ElephantSQL
   - The backend is a PostgreSQL database.
+  - Animations/MP4 video files are delivered by Cloudinary.
   - User uploaded images are handled by Cloudinary.
 
-<h2 align="center">Credits</h2>
+## Credits
 
 ### Content 📰
 
