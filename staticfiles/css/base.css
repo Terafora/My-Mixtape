@@ -17,6 +17,8 @@
 
 }
 
+/* General */
+
 html, body {
     height: 100%;
 }
@@ -24,11 +26,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-background);
+    /* background-color: var(--color-background);
     background-image: url('../images/background_grid.svg');
     background-size: cover;
     background-position: center; 
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 main {
@@ -36,6 +38,15 @@ main {
     padding-bottom: 5rem;
 }
 
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
 .container {
     background-color: var(--color-background);
     max-width: 1200px;
@@ -222,6 +233,13 @@ footer {
     padding: 44.5px 0;
 }
 
+.card-pic {
+    min-height: 300px;
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 
 /* Track List */
