@@ -8,9 +8,12 @@
     --color-background: #000;
     --pink: #A5239F;
     --blue: #62FFFF;
+    --yellow: #EBFF00;
+    --red: #E90003;
 
     /* Utils */
     --box-shadow: 0px 6px 5px 0px #A5239F;
+
 
 }
 
@@ -60,6 +63,24 @@ a {
 hr {
   width: 50%;
   margin: 50px auto;
+}
+
+.edit {
+    background-color: var(--yellow);
+    color: var(--background);
+    font-weight: 500;
+}
+
+.delete {
+    background-color: var(--red);
+    color: #fff;
+    font-weight: 500;
+}
+
+.add {
+    background-color: var(--pink);
+    color: #fff;
+    font-weight: 500;
 }
 
 /* Scroll Bar Stylings */
@@ -181,14 +202,27 @@ footer {
 
 /* Library */
 
-.bg-black{
+.bg-black {
     background-color: var(--color-background);
 }
 
-.mix-icon {
-    max-height: 150px;
-    width: auto;
+.card img {
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: cover;
 }
+
+.mix-icon {
+    display: block;
+    margin: auto;
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 44.5px 0;
+}
+
+
 
 /* Track List */
 
@@ -196,4 +230,8 @@ footer {
     max-height: 100px;
     width: auto;
     padding: 1rem;
+}
+
+.change-form {
+    background-color: var(--color-background);
 }
