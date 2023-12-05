@@ -26,11 +26,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    /* background-color: var(--color-background);
-    background-image: url('../images/background_grid.svg');
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed; */
+    background-color: var(--color-background);
 }
 
 main {
@@ -251,4 +247,13 @@ footer {
 
 .change-form {
     background-color: var(--color-background);
+}
+
+.track-container{
+    max-height: 250px;
+}
+
+.tracklisthr {
+    width: 100%;
+    margin: 0 auto;
 }
