@@ -50,7 +50,7 @@ main {
 .container {
     background-color: var(--color-background);
     max-width: 1200px;
-    min-height: 80vh;
+    height: 100vh;
 }
 
 h1, h2, h3 {
