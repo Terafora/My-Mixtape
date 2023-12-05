@@ -12,11 +12,16 @@
         <h2>The Site</h2>
         <div class="row px-md-5 text-start align-items-center justify-content-center">
             <div class="col-lg-6 py-3 py-md-5">
-                <img src="{% static 'images/boombox.svg' %}" class="boombox text-center" alt="Boombox image">
+                <div class="ratio ratio-16x9">
+                    <video class="w-100" autoplay muted loop>
+                        <source src="https://res.cloudinary.com/djrh6ryfr/video/upload/v1701807239/beatbop_ag75us.mp4" type="video/mp4">
+                        <img src="{% static 'images/avatar.svg' %}" alt="Cassette image">
+                    </video>
+                </div>
             </div>
             <div class="col-lg-6 py-3 py-md-5">
                 <p>My Mixtape is where music isn't just about playlists; it's a canvas for storytelling and connection. Craft your unique mixtapes, weaving together melodies sourced from across the digital landscape. With My Mixtape, you're not just curating songs; you're sharing a piece of your soul, inviting others to groove to the rhythm of your discoveries. Our platform empowers you to dive into a world where every mixtape becomes a narrative waiting to be felt, shared, and cherished. It's more than music; it's an auditory adventure that celebrates the art of curation, inspiring connections through the universal language of tunes.</p>
-            </div>
+            </div>        
             <div class="col-12 py-3 py-md-5">
                 <p>At My Mixtape, we transcend the ordinary playlists to create a space where the love for music fosters connections. Immerse yourself in a diverse musical landscape, exploring melodies meticulously crafted by fellow enthusiasts. Here, each mixtape is a doorway to someone's unique tale, a symphony of discovery waiting to unfold. Our mission goes beyond mere song compilation; it's about sparking inspiration, self-expression, and an endless journey through soundscapes. Join us in celebrating the artistry of curating your story through music—a platform where sharing isn't just about the tracks, but about the connections and stories they create. Welcome to My Mixtape—an invitation to discover, connect, and find the heartbeat in every mix.</p>
             </div>
