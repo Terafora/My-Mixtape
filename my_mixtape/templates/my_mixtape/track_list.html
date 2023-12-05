@@ -23,8 +23,8 @@
                     <hr class=" d-none d-md-block tracklisthr">
                     <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
                         <div class="order-sm-2 mb-2 mb-sm-0">
-                            <a href="{% url 'update_track' track_id=track.pk %}" class="btn edit text-black">Edit Track</a>
-                            <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn delete">Delete Track</a>
+                            <a href="{% url 'update_track' track_id=track.pk %}" class="btn edit text-black mt-1">Edit Track</a>
+                            <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn delete mt-1">Delete Track</a>
                         </div>
                         <p class="m-0 order-sm-1">{{ track.artist }}</p>
                     </div>                    
