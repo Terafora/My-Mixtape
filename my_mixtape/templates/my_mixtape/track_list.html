@@ -16,7 +16,6 @@
                 <h3>{{ track.title }}</h3>
             </a>
             <p>{{ track.artist }}</p>
-            <p>{{ track.album }}</p>
             <a href="{% url 'update_track' track_id=track.pk %}" class="btn edit text-black">Edit Track</a>
             <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn delete">Delete Track</a>
         </div>
