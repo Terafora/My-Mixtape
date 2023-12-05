@@ -12,7 +12,7 @@
         {{ form|crispy }}
         <div class="text-centre">
             <button type="submit"
-                class="btn btn-primary mt-2">Edit Track
+                class="btn edit text-black mt-2">Edit Track
             </button>
             <a href="{% url 'mixtape_detail' mixtape_id=track.mixtape.pk %}" class="btn btn-secondary mt-2">Back</a>
         </div>
