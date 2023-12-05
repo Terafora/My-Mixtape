@@ -73,6 +73,11 @@ hr {
   margin: 50px auto;
 }
 
+
+li {
+    color: #fff;
+    list-style-type: none;
+}
 /* Buttons */
 
 .edit {
@@ -207,6 +212,11 @@ footer {
     width: 100%;
     margin: 3% auto;
     border-radius: 5px;
+}
+
+.form-padding {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 /* About */
