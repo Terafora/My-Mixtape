@@ -3,9 +3,9 @@
 {% block title %}Delete Mixtape{{object.name}}{% endblock %}
 
 {% block content %}
-<div class="container justify-content-center text-center text-white change-form">
-    <h1 class="text-center h2">Confirm Mixtape Deletion</h1>
-    <div class="d-flex justify-content-center pt-3">
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100 text-center text-white change-form">
+    <h1 class="text-center h2 mt-3">Confirm Mixtape Deletion</h1>
+    <div class="d-flex flex-column align-items-center">
         <form method="post" class="text-center">
             {% csrf_token %}
             <p>Are you sure that you want to delete "{{ object.name }}"?</p>
@@ -14,5 +14,4 @@
         </form>
     </div>
 </div>
-
 {% endblock %}
