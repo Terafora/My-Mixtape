@@ -54,17 +54,18 @@ main {
 }
 
 h1, h2, h3 {
-    font-family: 'Hurricane', sans-serif;
     color: #fff;
 }
 
 h1 {
     font-size: 6rem;
     margin: 0;
+    font-family: 'Hurricane', sans-serif;
 }
 
 h2 {
     font-size: 4rem;
+    font-family: 'Hurricane', sans-serif;
 }
 
 a {
