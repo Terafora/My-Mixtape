@@ -17,17 +17,17 @@
             </a>
             <p>{{ track.artist }}</p>
             <p>{{ track.album }}</p>
-            <a href="{% url 'update_track' track_id=track.pk %}" class="btn btn-disabled mt-2">Edit Track</a>
-            <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn btn-danger">Delete Track</a>
+            <a href="{% url 'update_track' track_id=track.pk %}" class="btn edit text-black">Edit Track</a>
+            <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn delete">Delete Track</a>
         </div>
         {% endfor %}
     </div>
 
     <div class="container">
         <a href="{% url 'add_track' mixtape_id=mixtape.pk %}">
-            <button class="btn btn-primary">Add Track</button>
+            <button class="btn add">Add Track</button>
         </a>
-        <button class="btn btn-primary" id="share">Share</button>
+        <button class="btn btn-primary" id="share"><strong>Share</strong></button>
     </div>
 </div>
 {% endblock %}
