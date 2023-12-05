@@ -26,7 +26,9 @@
                             <a href="{% url 'update_track' track_id=track.pk %}" class="btn edit text-black mt-1">Edit Track</a>
                             <a href="{% url 'delete_track' mixtape_id=mixtape.pk track_id=track.pk %}" class="btn delete mt-1">Delete Track</a>
                         </div>
-                        <p class="m-0 order-sm-1">{{ track.artist }}</p>
+                        <a href="{{ track.song_link }}" target="_blank">
+                            <p class="m-0 order-sm-1">{{ track.artist }}</p>
+                        </a>
                     </div>                    
                 </div>
             </div>
