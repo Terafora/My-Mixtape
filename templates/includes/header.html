@@ -9,8 +9,8 @@
       </a>
       <a class="navbar-brand text-light d-none d-md-inline" href="{% url 'home' %}">My Mix Tape</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars toggle-colour pt-1"></i></span>
+    </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link text-light {% if url_name == "home" %} active {% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
@@ -24,7 +24,7 @@
             <a class="nav-link text-light {% if url_name == "accounts_logout" %} active {% endif %}" href="{% url 'account_logout' %}">Logout</a>
           {% else %}
             <a class="nav-link text-light {% if url_name == "account_login" %} active {% endif %}" href="{% url 'account_login' %}">Login</a>
-            <a class="nav-link text-light create-btn py-2 px-5 {% if url_name == "accounts_signup" %} active {% endif %}" href="{% url 'account_signup' %}"><strong>Sign Up</strong></a>
+            <a class="nav-link text-light text-center create-btn py-2 px-5 {% if url_name == "accounts_signup" %} active {% endif %}" href="{% url 'account_signup' %}"><strong>Sign Up</strong></a>
           {% endif %}
         </div>
       </div>
