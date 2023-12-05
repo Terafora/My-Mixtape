@@ -4,9 +4,10 @@
 
 My Mixtape is a website where you can creates a your own mixtape using various links to songs you enjoy from across the web so that you have all your favourite songs and music video in one centralised location which you can share with your friends. This project uses HTML, CSS, JavaScript for font-end operations, and Django for the backend. As a personal challenge I've also made sure to create all the art assets used by the sites myself using a combination of Figma, and LottieLabs. The site featurea an account system when users can log into a private account so that they can keep their mixtapes private and uneditable friom other users.
 
-![スクリーンショット 2023-11-26 155839](https://github.com/Terafora/My-Mixtape/assets/144109245/77861062-363d-4ada-abc7-7fa0910d4a67)
+![screen-recording_V2](https://github.com/Terafora/My-Mixtape/assets/144109245/7ddab116-bdb2-4cdf-8df9-d902ad09ff4f)
 
 ## 💻 Technologies 💻
+
 
 - HTML
 - CSS / Bootstrap 5
