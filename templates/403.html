@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Delete Mixtape{% endblock %}
+{% block title %}403 Unauthorized Access{% endblock %}
 
 {% block content %}
-    <div class-"container text-center">
-        <h1>403 - Unauthorized Access</h1>
-        <p>You are not authorized to perform this action</p>
-        <a href="{% url 'home' %}" class="btn btn-primary w-25">Home</a>
+<div class="container justify-content-center text-center py-5 text-white">
+    <h1>403 - Unauthorized Access</h1>
+    <div>
+        <div class="text-centre">
+            <a href="{% url 'home' %}" class="btn add mt-2">Home</a>
+        </div>
     </div>
+</div>
 {% endblock %}
+
