@@ -16,7 +16,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Track_List | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2F) | ![Track List - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/53d42343-6400-4f99-942d-3ce1168b3c40) | anchor element inside btn element warning fixed |
 | Add_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2F8%2Fadd_track%2F) | ![Add Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/6dc71c93-725d-47cb-98a3-9c7e5af97a28) | Pass. Trailing slash info |
 | Update_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Ftrack%2F8%2Fupdate%2F) | ![Update Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08397646-cf7d-4c86-85b2-d295e75d2ed7) | Pass |
-| Track_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2Fdelete_track%2F8%2F) | |![Delete Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f785354b-0368-4a55-9309-1e8792c15751) | Pass. Trailing slash info |
+| Track_Confirm_Delete | |![Delete Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f785354b-0368-4a55-9309-1e8792c15751) | Pass. Trailing slash info |
 | Add_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fadd_mixtape%2F) | ![Add Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08bc79d1-4364-436d-a4cc-f0c69e575442) | Pass. Trailing comma info |
 | Edit_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fedit%2F8%2F) | ![Edit Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/255bf4c9-4544-4164-9c65-a0ea01b1520e) | Pass. Trailing slash info |
 | Mixtape_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fdelete%2F5%2F) | ![Delete Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/a1102bb5-a9fc-4e5b-b1d9-1b01c2abbe34) | Pass. Trailing slash info |
@@ -32,9 +32,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) | ![Screenshot 2023-12-06 120530](https://github.com/Terafora/My-Mixtape/assets/144109245/2565d285-4505-4518-a3f5-d4fbedbdf927)
-![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d)
- | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
+| style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) |![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d) | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
 | style.css (stand alone)| n/a | ![only css](https://github.com/Terafora/My-Mixtape/assets/144109245/cecfc198-2832-43ab-8ea2-aff4fbc717e5) | Pass |
 
 
@@ -52,7 +50,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | File | PEP8CI URL | Screenshot | Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Manage.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/manage.py) | ![Screenshot 2023-12-06 143338](https://github.com/Terafora/My-Mixtape/assets/144109245/f17cda93-16ea-4f9d-b864-b0848ad5275c) | Pass |
 | Settings.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/settings.py#) | ![Screenshot 2023-12-06 144038](https://github.com/Terafora/My-Mixtape/assets/144109245/833d5abb-6e2b-4a60-a16b-55cfee630718) | Pass. Updated settings to fix a few overly long lines of code. |
 | Config.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/urls.py) | ![Screenshot 2023-12-06 144544](https://github.com/Terafora/My-Mixtape/assets/144109245/0ebd22ad-b681-43e9-91a4-ff3f6ff734c9) | Pass |
@@ -71,7 +69,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | --- | --- | --- | --- | --- | --- |
 | Chrome | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0b33327c-501d-4552-bde0-87fc68b4c26b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/e082df90-774a-4c85-85b1-c4f3a8c81331) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bee81c34-2cad-49c8-b867-ea751f246bdf) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9e3e93f4-5133-4d25-bd6a-19b52cd46e01) | Works as expected |
 | Firefox | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9ab90adc-8e67-43cb-9eea-09d54ef1b04b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/48822129-81f6-439c-86e6-a37e30ada51b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/32eaf790-766a-45dd-b2f3-8973cddb4189) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2883be76-4798-4c22-872f-0d26e35f8c5b) | Works as expected |
-| Edge | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0378a855-c5f5-4127-9223-f79ff9cff9bf)) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/294c17a9-3953-4ca8-aa21-7ea4615ad300) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3d749264-e2f8-4074-991b-4a0b7c4975ba) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4d48a3a6-f2a1-4b62-95d7-09ce1625ae4e) | Works as expected |
+| Edge | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0378a855-c5f5-4127-9223-f79ff9cff9bf) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/294c17a9-3953-4ca8-aa21-7ea4615ad300) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3d749264-e2f8-4074-991b-4a0b7c4975ba) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4d48a3a6-f2a1-4b62-95d7-09ce1625ae4e) | Works as expected |
 | Opera | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dd820dde-1cc4-40e0-a335-a73100b88654) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/278d1ffb-e78e-4dcd-af1c-d2fd30954a99) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5d57e984-c008-4644-bc1b-2f1a83c4e047) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ac4b5905-ca8f-4953-9037-4b618a799d07) | Works as expected.
 
 ## Responsiveness
