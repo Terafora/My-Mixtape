@@ -51,13 +51,14 @@ GENRES = [
 
 class Mixtape(models.Model):
     """A mixtape created by the user which will be in their collection"""
-    collection = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtapes')
-    name = models.CharField(max_length=200, null = False, blank = False)
+    collection = models.ForeignKey(User, on_delete=models.CASCADE, related_name='mixtapes')  # noqa
+    name = models.CharField(max_length=200, null=False, blank=False)
     image = CloudinaryField('image', default='placeholder')
-    image_alt = models.CharField(max_length=100, null = True, blank = True)
-    about = RichTextField(max_length= 1000 ,null = True, blank = True)
-    genre = models.CharField(max_length=33, choices=GENRES, default = 'Misc.')
+    image_alt = models.CharField(max_length=100, null=True, blank=True)
+    about = RichTextField(max_length=1000, null=True, blank=True)
+    genre = models.CharField(max_length=33, choices=GENRES, default='Misc.')
     posted_date = models.DateTimeField(auto_now=True)
+
 
 class Post(models.Model):
     featured_image = CloudinaryField(
@@ -67,19 +68,19 @@ class Post(models.Model):
 
     def __str__(self):
         return f"{self.name}"
-    
+
 
 class Track(models.Model):
     """A track in a mixtape"""
-    mixtape = models.ForeignKey(Mixtape, on_delete=models.CASCADE, related_name='tracks')
+    mixtape = models.ForeignKey(Mixtape, on_delete=models.CASCADE, related_name='tracks')  # noqa
     title = models.CharField(max_length=200, null=False, blank=False)
     artist = models.CharField(max_length=200, null=True, blank=True)
     song_link = models.URLField(max_length=500, null=False, blank=False)
-    genre = models.CharField(max_length=32, choices=GENRES, default = 'Misc.')
+    genre = models.CharField(max_length=32, choices=GENRES, default='Misc.')
     posted_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"{self.title} - {self.artist} ({self.mixtape.name})"
-    
+
     class Meta:
         ordering = ['-posted_date']

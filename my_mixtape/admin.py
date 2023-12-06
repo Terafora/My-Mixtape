@@ -12,7 +12,7 @@ from .models import Mixtape, Track
 @admin.register(Mixtape)
 class MixtapeAdmin(admin.ModelAdmin):
     list_display = ('name', 'genre')
-    
+
 
 @admin.register(Track)
 class TrackAdmin(admin.ModelAdmin):
