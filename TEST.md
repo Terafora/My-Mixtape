@@ -1,4 +1,4 @@
-# Testing 🧪
+![image](https://github.com/Terafora/My-Mixtape/assets/144109245/746a4f9f-e70e-4558-b19f-a3c99941edef)# Testing 🧪
 
 Return back to the [README.md](https://github.com/Terafora/My-Mixtape#readme) file.
 
@@ -65,116 +65,27 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ### Python
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | Screenshot | Notes |
+| File | PEP8CI URL | Screenshot | Notes |
 | --- | --- | --- |
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff) | Pass |
 
-| Config.settings.py | ![Screenshot 2023-12-06 123603](https://github.com/Terafora/My-Mixtape/assets/144109245/1b05cda2-4e47-4957-b030-189a5f62cd02) | PE501 line too long x4, unable to change as these lines are links to password validators |
+| Manage.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/manage.py) | ![Screenshot 2023-12-06 143338](https://github.com/Terafora/My-Mixtape/assets/144109245/f17cda93-16ea-4f9d-b864-b0848ad5275c) | Pass |
 
-| Config.urls.py | ![Screenshot 2023-12-06 124214](https://github.com/Terafora/My-Mixtape/assets/144109245/06d64c02-2c86-4fa2-ba40-2fd45589eafe) | Pass |
+| Settings.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/settings.py#) | ![Screenshot 2023-12-06 144038](https://github.com/Terafora/My-Mixtape/assets/144109245/833d5abb-6e2b-4a60-a16b-55cfee630718) | Pass. Updated settings to fix a few overly long lines of code. |
 
-| Config.wsgi.py | ![Screenshot 2023-12-06 124316](https://github.com/Terafora/My-Mixtape/assets/144109245/06f24732-68b4-4adc-af1f-fdc08bd4d4aa) | Pass |
+| Config.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/urls.py) | ![Screenshot 2023-12-06 144544](https://github.com/Terafora/My-Mixtape/assets/144109245/0ebd22ad-b681-43e9-91a4-ff3f6ff734c9) | Pass |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+| Admin.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/admin.py) | ![Screenshot 2023-12-06 145140](https://github.com/Terafora/My-Mixtape/assets/144109245/8b5cb704-37a9-430f-ac7f-e110dd57637e) | Pass. Cleared up white space. |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+| Forms.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/forms.py) | ![Screenshot 2023-12-06 145414](https://github.com/Terafora/My-Mixtape/assets/144109245/405d58a1-911a-4990-ad36-91b0d49bed98) | Pass. Cleared up white space. |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+| Models.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/models.py) | ![Screenshot 2023-12-06 150238](https://github.com/Terafora/My-Mixtape/assets/144109245/800d9bfe-8199-4c1a-844a-08e278b6e608) | Pass. Cleared up white space issues. |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+| My_Mixtape.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/urls.py) | ![Screenshot 2023-12-06 151008](https://github.com/Terafora/My-Mixtape/assets/144109245/e3d20ad5-5036-40ee-921f-90954d7db6e4) | Pass. Added appropriate fix to overly long lines of code. |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+| Views.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/views.py)| ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/110a4396-b04f-4ac2-97b3-65d24ae97f96) | Pass with adding appropritate fix to overly long lines and white space. |
 
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Browser Compatibility
 
@@ -206,12 +117,10 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-about.png) | ![screenshot](documentation/browser-chrome-edge.png) | ![screenshot](documentation/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-about.png) | ![screenshot](documentation/browser-brave-contact.png) | ![screenshot](documentation/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-about.png) | ![screenshot](documentation/browser-opera-contact.png) | ![screenshot](documentation/browser-opera-etc.png) | Minor differences |
+| Chrome | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0b33327c-501d-4552-bde0-87fc68b4c26b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/e082df90-774a-4c85-85b1-c4f3a8c81331) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bee81c34-2cad-49c8-b867-ea751f246bdf) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9e3e93f4-5133-4d25-bd6a-19b52cd46e01) | Works as expected |
+| Firefox | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9ab90adc-8e67-43cb-9eea-09d54ef1b04b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/48822129-81f6-439c-86e6-a37e30ada51b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/32eaf790-766a-45dd-b2f3-8973cddb4189) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2883be76-4798-4c22-872f-0d26e35f8c5b) | Works as expected |
+| Edge | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0378a855-c5f5-4127-9223-f79ff9cff9bf)) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/294c17a9-3953-4ca8-aa21-7ea4615ad300) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3d749264-e2f8-4074-991b-4a0b7c4975ba) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4d48a3a6-f2a1-4b62-95d7-09ce1625ae4e) | Works as expected |
+| Opera | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dd820dde-1cc4-40e0-a335-a73100b88654) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/278d1ffb-e78e-4dcd-af1c-d2fd30954a99) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5d57e984-c008-4644-bc1b-2f1a83c4e047) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ac4b5905-ca8f-4953-9037-4b618a799d07) | Works as expected.
 | repeat for any other tested browsers | x | x | x | x | x |
 
 ## Responsiveness
