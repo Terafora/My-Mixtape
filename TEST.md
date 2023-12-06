@@ -47,52 +47,21 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FTerafora.github.io%2FMy-Mixtape) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) | ![Screenshot 2023-12-06 120530](https://github.com/Terafora/My-Mixtape/assets/144109245/2565d285-4505-4518-a3f5-d4fbedbdf927)
+![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d)
+ | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
+
+| style.css (stand alone)| n/a | ![only css](https://github.com/Terafora/My-Mixtape/assets/144109245/cecfc198-2832-43ab-8ea2-aff4fbc717e5) | Pass |
+
 
 ### JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-If using modern JavaScript (ES6) methods, then make sure to include the following
-line at the very top of every single JavaScript file (this should remain in your files for submission):
-
-    /* jshint esversion: 11 */
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-    /* jshint esversion: 11, jquery: true */
-
-This allows the JShint validator to recognize modern ES6 methods, such as:
-`let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as an array of questions
-from `questions.js`, which are used within the main `script.js` file elsewhere.
-If that's the case, the JShint validation tool doesn't know how to recognize unused variables
-that would normally be imported locally in your code.
-These warnings are acceptable to showcase on your screenshots.
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc..
-To instantiate these components, we need to use their respective declarator.
-Again, the JShint validation tool would flag these as undefined/unused variables.
-These warnings are acceptable to showcase on your screenshots.
-
-Sample JS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| questions.js | ![screenshot](documentation/js-validation-questions.png) | Pass: No Errors |
-| quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
-| x | x | x | repeat for all remaining JavaScript files |
+| share.js & disable.js | ![JS Validation](https://github.com/Terafora/My-Mixtape/assets/144109245/e947c670-cf9c-4736-9164-882c4f85ed54) | Added missing semi-colons that were missing |
+
 
 ### Python
 
@@ -143,14 +112,38 @@ Sample Python code validation documentation below (tables are extremely helpful!
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/my-mixtape/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/my-mixtape/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/my-mixtape/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/my-mixtape/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/my-mixtape/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff) | Pass |
+
+| Config.settings.py | ![Screenshot 2023-12-06 123603](https://github.com/Terafora/My-Mixtape/assets/144109245/1b05cda2-4e47-4957-b030-189a5f62cd02) | PE501 line too long x4, unable to change as these lines are links to password validators |
+
+| Config.urls.py | ![Screenshot 2023-12-06 124214](https://github.com/Terafora/My-Mixtape/assets/144109245/06d64c02-2c86-4fa2-ba40-2fd45589eafe) | Pass |
+
+| Config.wsgi.py | ![Screenshot 2023-12-06 124316](https://github.com/Terafora/My-Mixtape/assets/144109245/06f24732-68b4-4adc-af1f-fdc08bd4d4aa) | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
+| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
+
 
 **IMPORTANT**: Django settings.py
 
