@@ -1,4 +1,4 @@
-![image](https://github.com/Terafora/My-Mixtape/assets/144109245/746a4f9f-e70e-4558-b19f-a3c99941edef)# Testing 🧪
+![image](https://github.com/Terafora/My-Mixtape/assets/144109245/099a9abe-b90c-4a34-ad31-f84c6c5d502e)# Testing 🧪
 
 Return back to the [README.md](https://github.com/Terafora/My-Mixtape#readme) file.
 
@@ -10,35 +10,20 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-
 | Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com) | ![Home - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/c787ee3c-5697-4d4c-9996-4416da0e4f30) | Pass |
-
 | About | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fabout%2F) | ![About - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f597139a-330b-4708-b393-328421fdcd99) | Pass |
-
 | Library | n/a | ![Library - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/be2212fd-1719-46e8-a298-04cbeeb3ce46) | anchor element inside btn element warning fixed |
-
 | Track_List | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2F) | ![Track List - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/53d42343-6400-4f99-942d-3ce1168b3c40) | anchor element inside btn element warning fixed |
-
 | Add_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2F8%2Fadd_track%2F) | ![Add Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/6dc71c93-725d-47cb-98a3-9c7e5af97a28) | Pass. Trailing slash info |
-
 | Update_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Ftrack%2F8%2Fupdate%2F) | ![Update Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08397646-cf7d-4c86-85b2-d295e75d2ed7) | Pass |
-
 | Track_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2Fdelete_track%2F8%2F) | |![Delete Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f785354b-0368-4a55-9309-1e8792c15751) | Pass. Trailing slash info |
-
 | Add_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fadd_mixtape%2F) | ![Add Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08bc79d1-4364-436d-a4cc-f0c69e575442) | Pass. Trailing comma info |
-
 | Edit_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fedit%2F8%2F) | ![Edit Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/255bf4c9-4544-4164-9c65-a0ea01b1520e) | Pass. Trailing slash info |
-
 | Mixtape_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fdelete%2F5%2F) | ![Delete Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/a1102bb5-a9fc-4e5b-b1d9-1b01c2abbe34) | Pass. Trailing slash info |
-
 | Logout | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Flogout%2F) |![Logout - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/58fe05f4-d655-430c-80dc-5ebacbe14369) | Pass |
-
 | Login | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Flogin%2F) | ![Login - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/493f0769-d177-4120-889a-cf5bce0d2afb) | Pass |
-
 | Signup | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Fsignup%2F) | ![Signup - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/17a2afe8-a4f7-43a7-a1f7-d021b386d9c6) | Pass |
-
 | Password_Reset | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![Password Reset - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/902b2509-bd78-4e27-a457-f0eb27bb4291)| Pass |
-
 | 403 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Ftrack%2F8%2Fupdate%2F) | ![403 - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/4a85642e-76f6-4afc-b638-3ee7b6382825) | Pass. Forced a 403 by trying to edit a track with a different user account to the creator so results show via Edit Track page. |
 
 ### CSS
@@ -50,7 +35,6 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) | ![Screenshot 2023-12-06 120530](https://github.com/Terafora/My-Mixtape/assets/144109245/2565d285-4505-4518-a3f5-d4fbedbdf927)
 ![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d)
  | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
-
 | style.css (stand alone)| n/a | ![only css](https://github.com/Terafora/My-Mixtape/assets/144109245/cecfc198-2832-43ab-8ea2-aff4fbc717e5) | Pass |
 
 
@@ -69,49 +53,17 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | PEP8CI URL | Screenshot | Notes |
 | --- | --- | --- |
-
 | Manage.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/manage.py) | ![Screenshot 2023-12-06 143338](https://github.com/Terafora/My-Mixtape/assets/144109245/f17cda93-16ea-4f9d-b864-b0848ad5275c) | Pass |
-
 | Settings.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/settings.py#) | ![Screenshot 2023-12-06 144038](https://github.com/Terafora/My-Mixtape/assets/144109245/833d5abb-6e2b-4a60-a16b-55cfee630718) | Pass. Updated settings to fix a few overly long lines of code. |
-
 | Config.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/urls.py) | ![Screenshot 2023-12-06 144544](https://github.com/Terafora/My-Mixtape/assets/144109245/0ebd22ad-b681-43e9-91a4-ff3f6ff734c9) | Pass |
-
 | Admin.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/admin.py) | ![Screenshot 2023-12-06 145140](https://github.com/Terafora/My-Mixtape/assets/144109245/8b5cb704-37a9-430f-ac7f-e110dd57637e) | Pass. Cleared up white space. |
-
 | Forms.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/forms.py) | ![Screenshot 2023-12-06 145414](https://github.com/Terafora/My-Mixtape/assets/144109245/405d58a1-911a-4990-ad36-91b0d49bed98) | Pass. Cleared up white space. |
-
 | Models.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/models.py) | ![Screenshot 2023-12-06 150238](https://github.com/Terafora/My-Mixtape/assets/144109245/800d9bfe-8199-4c1a-844a-08e278b6e608) | Pass. Cleared up white space issues. |
-
 | My_Mixtape.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/urls.py) | ![Screenshot 2023-12-06 151008](https://github.com/Terafora/My-Mixtape/assets/144109245/e3d20ad5-5036-40ee-921f-90954d7db6e4) | Pass. Added appropriate fix to overly long lines of code. |
-
 | Views.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/views.py)| ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/110a4396-b04f-4ac2-97b3-65d24ae97f96) | Pass with adding appropritate fix to overly long lines and white space. |
 
 
 ## Browser Compatibility
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
@@ -121,38 +73,16 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Firefox | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9ab90adc-8e67-43cb-9eea-09d54ef1b04b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/48822129-81f6-439c-86e6-a37e30ada51b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/32eaf790-766a-45dd-b2f3-8973cddb4189) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2883be76-4798-4c22-872f-0d26e35f8c5b) | Works as expected |
 | Edge | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0378a855-c5f5-4127-9223-f79ff9cff9bf)) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/294c17a9-3953-4ca8-aa21-7ea4615ad300) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3d749264-e2f8-4074-991b-4a0b7c4975ba) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4d48a3a6-f2a1-4b62-95d7-09ce1625ae4e) | Works as expected |
 | Opera | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dd820dde-1cc4-40e0-a335-a73100b88654) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/278d1ffb-e78e-4dcd-af1c-d2fd30954a99) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5d57e984-c008-4644-bc1b-2f1a83c4e047) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ac4b5905-ca8f-4953-9037-4b618a799d07) | Works as expected.
-| repeat for any other tested browsers | x | x | x | x | x |
 
 ## Responsiveness
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-about.png) | ![screenshot](documentation/responsive-mobile-contact.png) | ![screenshot](documentation/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-contact.png) | ![screenshot](documentation/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-about.png) | ![screenshot](documentation/responsive-desktop-contact.png) | ![screenshot](documentation/responsive-desktop-etc.png) | Works as expected |
+| Galaxy Fold (DevTools) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f396414d-e276-4577-bf93-d093130f65a2) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/448d85e0-a2b8-4560-a49a-e5f50ffc9e82) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f21441c9-6193-4c59-a099-70aaf7ee09da) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/45b3cd9b-4590-4e0d-a53d-5d23997f2802) | Works as expected |
+| iPad Mini (DevTools) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cc963d9a-1c25-4316-a9ae-773810379cb4) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3415e057-9f51-48f8-9684-33c55dc9ac55) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/b9f40a81-e945-4903-bd91-bd4b004653d6) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/718d2375-a369-454c-b225-690def41c73c) | Works as expected |
+| Desktop | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/626ed329-f03f-4484-875d-4b9e87e446cc)  | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/16714693-356f-43b9-a150-a6cc554fbea0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3053330b-4dda-4143-a664-6d807192e2c5) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d20ff25c-4738-4c47-9ad2-f05762c92afd) | Works as expected |
 | XL Monitor | ![screenshot](documentation/responsive-xl-home.png) | ![screenshot](documentation/responsive-xl-about.png) | ![screenshot](documentation/responsive-xl-contact.png) | ![screenshot](documentation/responsive-xl-etc.png) | Scaling starts to have minor issues |
 | 4K Monitor | ![screenshot](documentation/responsive-4k-home.png) | ![screenshot](documentation/responsive-4k-about.png) | ![screenshot](documentation/responsive-4k-contact.png) | ![screenshot](documentation/responsive-4k-etc.png) | Noticeable scaling issues |
 | Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel-home.png) | ![screenshot](documentation/responsive-pixel-about.png) | ![screenshot](documentation/responsive-pixel-contact.png) | ![screenshot](documentation/responsive-pixel-etc.png) | Works as expected |
