@@ -58,9 +58,10 @@
         {% endfor %}
     </div>
     <div class="container my-5">
-        <a href="{% url 'add_track' mixtape_id=mixtape.pk %}">
-            <button class="btn add">Add Track</button>
-        </a>
+        <button class="btn add">
+            <a href="{% url 'add_track' mixtape_id=mixtape.pk %}">
+                Add Track</button>
+            </a>
         <button class="btn btn-primary" id="share"><strong>Share</strong></button>
     </div>
 </div>
