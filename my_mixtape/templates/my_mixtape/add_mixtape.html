@@ -14,8 +14,7 @@
             {{ form|crispy }}
             <div class="text-centre">
                 <button type="submit"
-                    class="btn btn-primary mt-2"
-                    class="addmixbtn">Add Mixtape
+                    class="btn btn-primary mt-2 addmixbtn">Add Mixtape
                 </button>
                 <a href="{% url 'library' %}" class="btn btn-secondary mt-2">Back</a>
             </div>
@@ -24,4 +23,4 @@
 </div>
 {% endblock %}
 
-{% block extra_javascript %}<script src="{% static 'js/disable.js' %}"></script>{% endblock %}
+{% block extra_javascript %}<script src="{% static 'js/disable.js' %}" defer></script>{% endblock %}
