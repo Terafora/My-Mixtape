@@ -1,4 +1,4 @@
-# Testing 🧪
+![image](https://github.com/Terafora/My-Mixtape/assets/144109245/099a9abe-b90c-4a34-ad31-f84c6c5d502e)# Testing 🧪
 
 Return back to the [README.md](https://github.com/Terafora/My-Mixtape#readme) file.
 
@@ -10,35 +10,20 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-
 | Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com) | ![Home - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/c787ee3c-5697-4d4c-9996-4416da0e4f30) | Pass |
-
 | About | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fabout%2F) | ![About - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f597139a-330b-4708-b393-328421fdcd99) | Pass |
-
 | Library | n/a | ![Library - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/be2212fd-1719-46e8-a298-04cbeeb3ce46) | anchor element inside btn element warning fixed |
-
 | Track_List | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2F) | ![Track List - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/53d42343-6400-4f99-942d-3ce1168b3c40) | anchor element inside btn element warning fixed |
-
 | Add_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2F8%2Fadd_track%2F) | ![Add Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/6dc71c93-725d-47cb-98a3-9c7e5af97a28) | Pass. Trailing slash info |
-
 | Update_Track | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Ftrack%2F8%2Fupdate%2F) | ![Update Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08397646-cf7d-4c86-85b2-d295e75d2ed7) | Pass |
-
-| Track_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2F8%2Fdelete_track%2F8%2F) | |![Delete Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f785354b-0368-4a55-9309-1e8792c15751) | Pass. Trailing slash info |
-
+| Track_Confirm_Delete | |![Delete Track - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/f785354b-0368-4a55-9309-1e8792c15751) | Pass. Trailing slash info |
 | Add_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fadd_mixtape%2F) | ![Add Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/08bc79d1-4364-436d-a4cc-f0c69e575442) | Pass. Trailing comma info |
-
 | Edit_Mixtape | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fedit%2F8%2F) | ![Edit Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/255bf4c9-4544-4164-9c65-a0ea01b1520e) | Pass. Trailing slash info |
-
 | Mixtape_Confirm_Delete | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Fmixtape%2Fdelete%2F5%2F) | ![Delete Mixtape - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/a1102bb5-a9fc-4e5b-b1d9-1b01c2abbe34) | Pass. Trailing slash info |
-
 | Logout | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Flogout%2F) |![Logout - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/58fe05f4-d655-430c-80dc-5ebacbe14369) | Pass |
-
 | Login | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Flogin%2F) | ![Login - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/493f0769-d177-4120-889a-cf5bce0d2afb) | Pass |
-
 | Signup | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Fsignup%2F) | ![Signup - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/17a2afe8-a4f7-43a7-a1f7-d021b386d9c6) | Pass |
-
 | Password_Reset | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Faccounts%2Fpassword%2Freset%2F) | ![Password Reset - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/902b2509-bd78-4e27-a457-f0eb27bb4291)| Pass |
-
 | 403 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com%2Ftrack%2F8%2Fupdate%2F) | ![403 - Test](https://github.com/Terafora/My-Mixtape/assets/144109245/4a85642e-76f6-4afc-b638-3ee7b6382825) | Pass. Forced a 403 by trying to edit a track with a different user account to the creator so results show via Edit Track page. |
 
 ### CSS
@@ -47,10 +32,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) | ![Screenshot 2023-12-06 120530](https://github.com/Terafora/My-Mixtape/assets/144109245/2565d285-4505-4518-a3f5-d4fbedbdf927)
-![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d)
- | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
-
+| style.css & bootstrap from live | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmy-mix-tapes-a7ee13848429.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) |![Screenshot 2023-12-06 120514](https://github.com/Terafora/My-Mixtape/assets/144109245/38cb3b22-ccaf-47e2-9dba-6327f5cf530d) | 16 Errors pointing to css brought in through Bootstrap's stylesheet, 442 warnings in regards to Bootstrap Styles linked in and validator not able to check CSS variables |
 | style.css (stand alone)| n/a | ![only css](https://github.com/Terafora/My-Mixtape/assets/144109245/cecfc198-2832-43ab-8ea2-aff4fbc717e5) | Pass |
 
 
@@ -65,342 +47,89 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ### Python
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | Screenshot | Notes |
-| --- | --- | --- |
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff) | Pass |
+| File | PEP8CI URL | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Manage.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/manage.py) | ![Screenshot 2023-12-06 143338](https://github.com/Terafora/My-Mixtape/assets/144109245/f17cda93-16ea-4f9d-b864-b0848ad5275c) | Pass |
+| Settings.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/settings.py#) | ![Screenshot 2023-12-06 144038](https://github.com/Terafora/My-Mixtape/assets/144109245/833d5abb-6e2b-4a60-a16b-55cfee630718) | Pass. Updated settings to fix a few overly long lines of code. |
+| Config.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/config/urls.py) | ![Screenshot 2023-12-06 144544](https://github.com/Terafora/My-Mixtape/assets/144109245/0ebd22ad-b681-43e9-91a4-ff3f6ff734c9) | Pass |
+| Admin.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/admin.py) | ![Screenshot 2023-12-06 145140](https://github.com/Terafora/My-Mixtape/assets/144109245/8b5cb704-37a9-430f-ac7f-e110dd57637e) | Pass. Cleared up white space. |
+| Forms.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/forms.py) | ![Screenshot 2023-12-06 145414](https://github.com/Terafora/My-Mixtape/assets/144109245/405d58a1-911a-4990-ad36-91b0d49bed98) | Pass. Cleared up white space. |
+| Models.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/models.py) | ![Screenshot 2023-12-06 150238](https://github.com/Terafora/My-Mixtape/assets/144109245/800d9bfe-8199-4c1a-844a-08e278b6e608) | Pass. Cleared up white space issues. |
+| My_Mixtape.Urls.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/urls.py) | ![Screenshot 2023-12-06 151008](https://github.com/Terafora/My-Mixtape/assets/144109245/e3d20ad5-5036-40ee-921f-90954d7db6e4) | Pass. Added appropriate fix to overly long lines of code. |
+| Views.py | [PEP8CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Terafora/My-Mixtape/main/my_mixtape/views.py)| ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/110a4396-b04f-4ac2-97b3-65d24ae97f96) | Pass with adding appropritate fix to overly long lines and white space. |
 
-| Config.settings.py | ![Screenshot 2023-12-06 123603](https://github.com/Terafora/My-Mixtape/assets/144109245/1b05cda2-4e47-4957-b030-189a5f62cd02) | PE501 line too long x4, unable to change as these lines are links to password validators |
-
-| Config.urls.py | ![Screenshot 2023-12-06 124214](https://github.com/Terafora/My-Mixtape/assets/144109245/06d64c02-2c86-4fa2-ba40-2fd45589eafe) | Pass |
-
-| Config.wsgi.py | ![Screenshot 2023-12-06 124316](https://github.com/Terafora/My-Mixtape/assets/144109245/06f24732-68b4-4adc-af1f-fdc08bd4d4aa) | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-| Config.asgi.py | ![Screenshot 2023-12-06 122721](https://github.com/Terafora/My-Mixtape/assets/144109245/2b690e64-acf4-43d0-991f-f252aa6615ff | Pass |
-
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Browser Compatibility
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge-home.png) | ![screenshot](documentation/browser-edge-about.png) | ![screenshot](documentation/browser-chrome-edge.png) | ![screenshot](documentation/browser-edge-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave-home.png) | ![screenshot](documentation/browser-brave-about.png) | ![screenshot](documentation/browser-brave-contact.png) | ![screenshot](documentation/browser-brave-etc.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera-home.png) | ![screenshot](documentation/browser-opera-about.png) | ![screenshot](documentation/browser-opera-contact.png) | ![screenshot](documentation/browser-opera-etc.png) | Minor differences |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Chrome | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0b33327c-501d-4552-bde0-87fc68b4c26b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/e082df90-774a-4c85-85b1-c4f3a8c81331) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bee81c34-2cad-49c8-b867-ea751f246bdf) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9e3e93f4-5133-4d25-bd6a-19b52cd46e01) | Works as expected |
+| Firefox | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/9ab90adc-8e67-43cb-9eea-09d54ef1b04b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/48822129-81f6-439c-86e6-a37e30ada51b) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/32eaf790-766a-45dd-b2f3-8973cddb4189) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2883be76-4798-4c22-872f-0d26e35f8c5b) | Works as expected |
+| Edge | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0378a855-c5f5-4127-9223-f79ff9cff9bf) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/294c17a9-3953-4ca8-aa21-7ea4615ad300) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3d749264-e2f8-4074-991b-4a0b7c4975ba) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4d48a3a6-f2a1-4b62-95d7-09ce1625ae4e) | Works as expected |
+| Opera | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dd820dde-1cc4-40e0-a335-a73100b88654) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/278d1ffb-e78e-4dcd-af1c-d2fd30954a99) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5d57e984-c008-4644-bc1b-2f1a83c4e047) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ac4b5905-ca8f-4953-9037-4b618a799d07) | Works as expected.
 
 ## Responsiveness
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | About | Contact | etc | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-about.png) | ![screenshot](documentation/responsive-mobile-contact.png) | ![screenshot](documentation/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-contact.png) | ![screenshot](documentation/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-about.png) | ![screenshot](documentation/responsive-desktop-contact.png) | ![screenshot](documentation/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl-home.png) | ![screenshot](documentation/responsive-xl-about.png) | ![screenshot](documentation/responsive-xl-contact.png) | ![screenshot](documentation/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k-home.png) | ![screenshot](documentation/responsive-4k-about.png) | ![screenshot](documentation/responsive-4k-contact.png) | ![screenshot](documentation/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel-home.png) | ![screenshot](documentation/responsive-pixel-about.png) | ![screenshot](documentation/responsive-pixel-contact.png) | ![screenshot](documentation/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone-home.png) | ![screenshot](documentation/responsive-iphone-about.png) | ![screenshot](documentation/responsive-iphone-contact.png) | ![screenshot](documentation/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Galaxy Fold (DevTools) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f396414d-e276-4577-bf93-d093130f65a2) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/448d85e0-a2b8-4560-a49a-e5f50ffc9e82) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f21441c9-6193-4c59-a099-70aaf7ee09da) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/45b3cd9b-4590-4e0d-a53d-5d23997f2802) | Works as expected |
+| iPad Mini (DevTools) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cc963d9a-1c25-4316-a9ae-773810379cb4) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3415e057-9f51-48f8-9684-33c55dc9ac55) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/b9f40a81-e945-4903-bd91-bd4b004653d6) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/718d2375-a369-454c-b225-690def41c73c) | Works as expected |
+| Desktop | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/626ed329-f03f-4484-875d-4b9e87e446cc)  | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/16714693-356f-43b9-a150-a6cc554fbea0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3053330b-4dda-4143-a664-6d807192e2c5) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d20ff25c-4738-4c47-9ad2-f05762c92afd) | Works as expected |
+| Desktop (Portrait) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/70b0211a-5dac-48c6-aa44-01b10908c014) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/186e0289-61af-4621-985b-fad8a58e1ac4) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/22ff59f3-a394-49f2-a91f-07ce22401570) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bcda9361-c116-4324-9b7e-e304556b634b) | Some minor issues with excessive space towards bottom of page. |
+| MS Surface Duo (Single Screen Portrait) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2e3649d7-e562-4e12-b3ed-af366725269f) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6a173114-d63c-4447-aa1a-90ebd2f3cff5) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7719a959-4448-4c2c-b14f-ac40e5b4c2ee) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/a4e71ceb-1604-4272-9be9-74ec273f7300) | Works as expected though edit buttons change colour. |
+| MS Surface Duo (Dual-Screen Landscape) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d31f19a7-3b03-42e8-8bbe-246451627d2c) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/12185235-c66e-4629-beec-faa473388e69) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/640e28f5-2248-44a7-b74b-4b8c07ea23b8) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6b5fd416-1758-44a9-aec2-f6bb68e74615) | Works as expected though edit buttons change colour. |
+| Galaxy Tab A | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/46c620f6-9e57-4f48-b0f5-9b8943154af0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/aee70a18-65da-40e5-a994-6ba7dc531cd0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5f7fc45d-6d14-446f-8589-9c411e86101e) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/e5dd7b49-8386-4a2f-8fec-d547503c0e5c) | Works as expected |
+| Huawei P30 Pro | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/b9144068-f9a5-465a-8a05-6774cb4dd15d) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f2b0b954-aa61-4c8e-9ebc-2e390296dcf0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/786db5ee-f1d8-431a-b7a3-96d9940a9701) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/399c01c3-4c07-4f95-be0c-870ab94994fd) | Works as expected |
 
 ## Lighthouse Audit
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f28285a3-85cd-47b4-8a05-7d85f7d96e32) | Some minor warnings |
+| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cdefd5fe-38dd-46f9-836a-303b86cdbfb1) | Some minor warnings |
+| Library | n/a | n/a | Lighthouse can't run on this page |
+| Tracklist | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/309b6890-6ecb-4ad8-9255-27181863d822) | Slightly slow response time due to number of images loading from cloudinary |
+
+Unable to test edit mixtape, delete mixtape, edit track, delete track due to login being required.
 
 ## Defensive Programming
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Sign Up | | | | | |
+| | When creating an account the user is expected to fill in all fields. | Tested the feature by trying to submit the form with a variety of incomplete forms.  | The feature behaved as expected, prevented the creation of a user while clarifying the reason. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4c6878b1-265a-4c4b-a0e5-454752faafec) |
+| | When creating an account the user is expected to provide an adequately strong password. | Tested the feature by using a weak password that doesn't meet the laid out expectations on the page | The account creation was blocked and displayed the appropriate message on screen. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0b22167b-e14f-49c9-acda-439d79ac23c2) |
+| | When creating an account the user is expected to provide a username not already in use. | Tested the feature by trying to make an account with a username which is already taken. | The feature behaved as expected and showed the appropriate message. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/07476f21-3223-4138-9b10-df190eeb4de2) |
+| | When creating an account the user is expected to provide an email not already in use. | Tested the feature by attempting to make an account with an email which has already in use. | The feature did not respond to A, B, or C. | I did Z to the code because something was missing. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dfa280c7-2f81-4912-a8d6-20b6ff57f9fb) |
+| Login | | | | | |
+| | When logging in the user is expected to fill in the full form. | Tested the feature by not filling in every form. | The feature behaved as expected, and prevented login. | Test concluded and passed | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/1343db06-ad0d-498f-8d3a-8276c85dab4e) |
+| | When logging in the user needs to provide a correct username to login | Tested the feature by entering an incorrect username/email and password | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ab15a903-9fee-4078-bcac-4cac34ebf25b) |
+| | When logging in the user needs to provide a correct password to login | Tested the feature by entering an incorrect password with correct username | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/c6d22150-2f1b-42cb-b660-c04b4892308b) |
+| Add Mixtape | | | | | |
+| | When adding a mixtape the user needs to enter a name for the mixtape. | Tested the feature by not entering a name for the mixtape. | The feature behaved as expected, and it prevented the creation of the mixtape while providing the adequate message. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/a9f07918-9902-48d0-a545-d801f2f46f5c) |
+| | When adding a mixtape the user shouldn't be able to add more than one at a time. | Tested the feature by hitting the button multiple times to try and replicate making multiple mixtapes. | Test concluded and passed. | Was previously fixed by disabling the create button after first click. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bb30e295-e8bc-4b8d-9780-e608a44c1cb5) |
+| Add Track | | | | | |
+| | When adding a track the user needs to enter a title for it to be accepted. | Tested the feature by not typing in the title field. | The feature behaved as expected, prevented creation while providing the appropriate message to the user. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/53174283-dd69-4f60-a49c-a36fa91a9095)) |
+| | When adding a track the user shouldn't be able to hit submit multiple times. | Tested the feature by hitting submit button multiple times | The feature behaved as expected and the button became disabled after the first press. | Was previously fixed by disabling the create button after first click. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/50356d7a-2ae7-4d5f-9095-2f7f0711d8b8) |
+| | When adding a track the user needs to enter a link for it to be accepted. | Tested the feature by not typing in the link field as well as typing a non link. | The feature behaved as expected, prevented creation while providing the appropriate message to the user. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/18ffda78-3fd2-4bae-873c-e33c5b53574c) |
+| Delete Other User Track | | | | | |
+| | When trying to delete a track the user needs to be the creator of the track to delete the object. | Tested the feature by trying to delete a track as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7aa351d1-d218-4843-b9d6-1d2197d920c5) |
+| Edit Other User Track | | | | | |
+| | When trying to wdit a track the user needs to be the creator of the track to edit the object. | Tested the feature by trying to edit a track as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/be5d74af-24ee-4adf-b8e6-9528d9ae6cb5) |
+| Delete Other User Mixtape | | | | | |
+| | When trying to delete a mixtape the user needs to be the creator of the mixtape to delete the object. | Tested the feature by trying to delete a mixtape as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7aa351d1-d218-4843-b9d6-1d2197d920c5) |
+| Edit Other User Mixtape | | | | | |
+| | When trying to edit a mixtape the user needs to be the creator of the mixtape to edit the object. | Tested the feature by trying to edit a mixtape as a seperate user. | The feature behaved as expected, and sent me to a 404 page. | Test concluded and passed. In the future I will create a unique 404 page | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/46d2c7ee-9878-491c-94b0-99ed4f903fac) |
 
 ## User Story Testing
 
