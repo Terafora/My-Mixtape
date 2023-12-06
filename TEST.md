@@ -128,59 +128,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | When trying to wdit a track the user needs to be the creator of the track to edit the object. | Tested the feature by trying to edit a track as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/be5d74af-24ee-4adf-b8e6-9528d9ae6cb5) |
 | Delete Other User Mixtape | | | | | |
 | | When trying to delete a mixtape the user needs to be the creator of the mixtape to delete the object. | Tested the feature by trying to delete a mixtape as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7aa351d1-d218-4843-b9d6-1d2197d920c5) |
-
-
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Edit Other User Mixtape | | | | | |
+| | When trying to edit a mixtape the user needs to be the creator of the mixtape to edit the object. | Tested the feature by trying to edit a mixtape as a seperate user. | The feature behaved as expected, and sent me to a 404 page. | Test concluded and passed. In the future I will create a unique 404 page | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/46d2c7ee-9878-491c-94b0-99ed4f903fac) |
 
 ## User Story Testing
 
