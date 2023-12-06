@@ -30,8 +30,10 @@
             </div>
         {% endfor %}
     </div>
-    <button class="btn add mt-3">
-        <a href="{% url 'add_mixtape' %}">Add Mix Tape</a>
-    </button>
+    <a href="{% url 'add_mixtape' %}">
+        <button class="btn add mt-3">
+            Add Mix Tape
+        </button>
+    </a>
 </div>
 {% endblock %}
