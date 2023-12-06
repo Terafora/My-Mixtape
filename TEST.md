@@ -115,15 +115,21 @@ Defensive programming was manually tested with the below user acceptance testing
 | | When logging in the user is expected to fill in the full form. | Tested the feature by not filling in every form. | The feature behaved as expected, and prevented login. | Test concluded and passed | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/1343db06-ad0d-498f-8d3a-8276c85dab4e) |
 | | When logging in the user needs to provide a correct username to login | Tested the feature by entering an incorrect username/email and password | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ab15a903-9fee-4078-bcac-4cac34ebf25b) |
 | | When logging in the user needs to provide a correct password to login | Tested the feature by entering an incorrect password with correct username | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/c6d22150-2f1b-42cb-b660-c04b4892308b) |
-
 | Add Mixtape | | | | | |
 | | When adding a mixtape the user needs to enter a name for the mixtape. | Tested the feature by not entering a name for the mixtape. | The feature behaved as expected, and it prevented the creation of the mixtape while providing the adequate message. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/a9f07918-9902-48d0-a545-d801f2f46f5c) |
 | | When adding a mixtape the user shouldn't be able to add more than one at a time. | Tested the feature by hitting the button multiple times to try and replicate making multiple mixtapes. | Test concluded and passed. | Was previously fixed by disabling the create button after first click. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bb30e295-e8bc-4b8d-9780-e608a44c1cb5) |
-
 | Add Track | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| | When adding a track the user needs to enter a title for it to be accepted. | Tested the feature by not typing in the title field. | The feature behaved as expected, prevented creation while providing the appropriate message to the user. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/53174283-dd69-4f60-a49c-a36fa91a9095)) |
+| | When adding a track the user shouldn't be able to hit submit multiple times. | Tested the feature by hitting submit button multiple times | The feature behaved as expected and the button became disabled after the first press. | Was previously fixed by disabling the create button after first click. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/50356d7a-2ae7-4d5f-9095-2f7f0711d8b8) |
+| | When adding a track the user needs to enter a link for it to be accepted. | Tested the feature by not typing in the link field as well as typing a non link. | The feature behaved as expected, prevented creation while providing the appropriate message to the user. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/18ffda78-3fd2-4bae-873c-e33c5b53574c) |
+| Delete Other User Track | | | | | |
+| | When trying to delete a track the user needs to be the creator of the track to delete the object. | Tested the feature by trying to delete a track as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7aa351d1-d218-4843-b9d6-1d2197d920c5) |
+| Edit Other User Track | | | | | |
+| | When trying to wdit a track the user needs to be the creator of the track to edit the object. | Tested the feature by trying to edit a track as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/be5d74af-24ee-4adf-b8e6-9528d9ae6cb5) |
+| Delete Other User Mixtape | | | | | |
+| | When trying to delete a mixtape the user needs to be the creator of the mixtape to delete the object. | Tested the feature by trying to delete a mixtape as a seperate user. | The feature behaved as expected, and sent me to a 403 page. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7aa351d1-d218-4843-b9d6-1d2197d920c5) |
+
+
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
