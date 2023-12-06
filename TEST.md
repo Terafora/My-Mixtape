@@ -89,101 +89,38 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f28285a3-85cd-47b4-8a05-7d85f7d96e32) | Some minor warnings |
+| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cdefd5fe-38dd-46f9-836a-303b86cdbfb1) | Some minor warnings |
+| Library | n/a | n/a | Lighthouse can't run on this page |
+| Tracklist | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/309b6890-6ecb-4ad8-9255-27181863d822) | Slightly slow response time due to number of images loading from cloudinary |
+
+Unable to test edit mixtape, delete mixtape, edit track, delete track due to login being required.
 
 ## Defensive Programming
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-MS3 (Flask) | MS4/PP4/PP5 (Django):
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable.
-Ideally, tests cases should focus on each individual section of every page on the website.
-Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine,
-consider documenting tests on each element of the page
-(ie. button clicks, input box validation, navigation links, etc.) by testing them in their happy flow,
-and also the bad/exception flow, mentioning the expected and observed results,
-and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
-| Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature06.png) |
-| Contact | | | | | |
+| Sign Up | | | | | |
+| | When creating an account the user is expected to fill in all fields. | Tested the feature by trying to submit the form with a variety of incomplete forms.  | The feature behaved as expected, prevented the creation of a user while clarifying the reason. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/4c6878b1-265a-4c4b-a0e5-454752faafec) |
+| | When creating an account the user is expected to provide an adequately strong password. | Tested the feature by using a weak password that doesn't meet the laid out expectations on the page | The account creation was blocked and displayed the appropriate message on screen. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0b22167b-e14f-49c9-acda-439d79ac23c2) |
+| | When creating an account the user is expected to provide a username not already in use. | Tested the feature by trying to make an account with a username which is already taken. | The feature behaved as expected and showed the appropriate message. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/07476f21-3223-4138-9b10-df190eeb4de2) |
+| | When creating an account the user is expected to provide an email not already in use. | Tested the feature by attempting to make an account with an email which has already in use. | The feature did not respond to A, B, or C. | I did Z to the code because something was missing. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/dfa280c7-2f81-4912-a8d6-20b6ff57f9fb) |
+| Login | | | | | |
+| | When logging in the user is expected to fill in the full form. | Tested the feature by not filling in every form. | The feature behaved as expected, and prevented login. | Test concluded and passed | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/1343db06-ad0d-498f-8d3a-8276c85dab4e) |
+| | When logging in the user needs to provide a correct username to login | Tested the feature by entering an incorrect username/email and password | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/ab15a903-9fee-4078-bcac-4cac34ebf25b) |
+| | When logging in the user needs to provide a correct password to login | Tested the feature by entering an incorrect password with correct username | The feature behaved as expected and prevented user login while providing the reason why login failed. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/c6d22150-2f1b-42cb-b660-c04b4892308b) |
+
+| Add Mixtape | | | | | |
+| | When adding a mixtape the user needs to enter a name for the mixtape. | Tested the feature by not entering a name for the mixtape. | The feature behaved as expected, and it prevented the creation of the mixtape while providing the adequate message. | Test concluded and passed. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/a9f07918-9902-48d0-a545-d801f2f46f5c) |
+| | When adding a mixtape the user shouldn't be able to add more than one at a time. | Tested the feature by hitting the button multiple times to try and replicate making multiple mixtapes. | Test concluded and passed. | Was previously fixed by disabling the create button after first click. | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bb30e295-e8bc-4b8d-9780-e608a44c1cb5) |
+
+| Add Track | | | | | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
 | repeat for all remaining pages | x | x | x | x | x |
