@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Add Track{% endblock %}
 
 {% block content %}
@@ -12,7 +14,7 @@
             {{ form|crispy }}
             <div class="text-centre">
                 <button type="submit"
-                class="btn add mt-2">
+                class="btn add mt-2 addmixbtn">
                     Add Track
                 </button>
                 <a href="{% url 'library' %}" class="btn btn-secondary mt-2">Back</a>
@@ -21,3 +23,5 @@
     </div>
 </div>
 {% endblock %}
+
+{% block extra_javascript %}<script src="{% static 'js/disable.js' %}" defer></script>{% endblock %}
