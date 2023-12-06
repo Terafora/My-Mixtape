@@ -45,20 +45,20 @@ INSTALLED_APPS = [
     "cloudinary_storage",
     "django.contrib.sites",
 
-# allauth apps    
+    # allauth apps
 
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
 
-# 3rd party apps
+    # 3rd party apps
 
     "crispy_forms",
     "crispy_bootstrap5",
     "cloudinary",
     "djrichtextfield",
 
-# local apps
+    # local apps
 
     "my_mixtape",
 
@@ -74,7 +74,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'allauth.account.middleware.AccountMiddleware',
-       
 ]
 
 SITE_ID = 1
@@ -145,8 +144,8 @@ else:
 
 
 CSRF_TRUSTED_ORIGINS = [
-"https://*.gitpod.io",
-"https://*.herokuapp.com"
+    "https://*.gitpod.io",
+    "https://*.herokuapp.com",
 ]
 
 # Password validation
@@ -210,7 +209,7 @@ MIME_TYPES = {
 # Cloudinary Settings
 
 # May have to remove if static files are not working
-#may also have to change to STATICFILES_STORAGE up top 
+# may also have to change to STATICFILES_STORAGE up top
 # STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
 # Default primary key field type
