@@ -26,11 +26,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    /* background-color: var(--color-background);
-    background-image: url('../images/background_grid.svg');
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed; */
+    background-color: var(--color-background);
 }
 
 main {
@@ -50,26 +46,26 @@ main {
 .container {
     background-color: var(--color-background);
     max-width: 1200px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1, h2, h3 {
+    font-family: 'Hurricane', sans-serif;
     color: #fff;
 }
 
 h1 {
     font-size: 6rem;
     margin: 0;
-    font-family: 'Hurricane', sans-serif;
 }
 
 h2 {
     font-size: 4rem;
-    font-family: 'Hurricane', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 hr {
@@ -77,10 +73,21 @@ hr {
   margin: 50px auto;
 }
 
+
+li {
+    color: #fff;
+    list-style-type: none;
+}
+/* Buttons */
+
 .edit {
     background-color: var(--yellow);
     color: var(--background);
     font-weight: 500;
+}
+
+.edit:hover {
+    background-color: #878f2c;
 }
 
 .delete {
@@ -89,10 +96,18 @@ hr {
     font-weight: 500;
 }
 
+.delete:hover {
+    background-color: #882224;
+}
+
 .add {
     background-color: var(--pink);
     color: #fff;
     font-weight: 500;
+}
+
+.add:hover{
+    background-color: #640660;
 }
 
 /* Scroll Bar Stylings */
@@ -129,6 +144,10 @@ nav {
 
 .active {
     color: var(--pink);
+}
+
+.toggle-colour {
+    color: #fff;
 }
 
 .nav-shadow {
@@ -192,8 +211,12 @@ footer {
 .form {
     width: 100%;
     margin: 3% auto;
-    box-shadow: var(--box-shadow);
     border-radius: 5px;
+}
+
+.form-padding {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 /* About */
@@ -253,4 +276,13 @@ footer {
 
 .change-form {
     background-color: var(--color-background);
+}
+
+.track-container{
+    max-height: 250px;
+}
+
+.tracklisthr {
+    width: 100%;
+    margin: 0 auto;
 }
