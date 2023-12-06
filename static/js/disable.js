@@ -1,5 +1,5 @@
 const addMixBtn = document.getElementsByClassName('addmixbtn')[0];
-let = counter = 0
+let counter = 0
 
 document.addEventListener('DOMContentLoaded', function() {
 
