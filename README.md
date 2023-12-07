@@ -124,7 +124,9 @@ All Testing can be found in my seperate TEST.md [here](https://github.com/Terafo
 - My Mixtape's front-end was deployed to [Heroku](https://www.heroku.com)
   - Using a procfile and requirements.txt Heroku was able to successfully deploy the site
   - The appropriate env variables were setup to allow the app to run as expected.
-  - Django settings were setup and further refined throughout the progress of this project to ensure the smooth running and transition of the site as it went from running on a local server to displaying on live. 
+  - Django settings were setup and further refined throughout the progress of this project to ensure the smooth running and transition of the site as it went from running on a local server to displaying on live.
+  - Language options for the site so it could be used more widely.
+  - Ability to arrange tracks and mixtapes better.
 
 - My Mixtape's backend was hosted by [ElephantSQL](https://www.elephantsql.com).
   - The backend is a PostgreSQL database.
