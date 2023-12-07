@@ -1,5 +1,9 @@
 # 🖭 My-Mixtape 🖭
 
+![image](https://github.com/Terafora/My-Mixtape/assets/144109245/065f1a4e-1249-42d5-a405-0a59affedec5)
+
+[My Mixtape is live! Come visit here.](https://my-mix-tapes-a7ee13848429.herokuapp.com)
+
 ## About
 
 My Mixtape is a website where you can creates a your own mixtape using various links to songs you enjoy from across the web so that you have all your favourite songs and music video in one centralised location which you can share with your friends. Unlike a simple Youtube  or Spotify list you can add certain retro flare which speaks to your own retro sensibilities while still benefitting from the advances of modern technology.
@@ -72,19 +76,27 @@ My Mixtape allows users to:
 
 The homepage gives users a little glimpse at the site and gives the general idea of what My Mixtape is all about.
 
+![Screen Recording - Dec 7, 2023](https://github.com/Terafora/My-Mixtape/assets/144109245/41308c99-2dc5-46ab-b87a-1898b0508cef)
+
 ### About ❓
 
 The about page goes a little in depth with what My Mixtape is all about, the problem it is solving and a little information about the creator of the website.
 
+![Screen Recording - Dec 7, 2023 (1)](https://github.com/Terafora/My-Mixtape/assets/144109245/7b031e2c-5462-4b5e-9a51-f1c6b521550a)
+
 ### Library 📖
 
 The library page is where the magic begins to happen. From here users can create their own mixtapes and what mixtapes they've already created and have stored.
+
+![Screen Recording - Dec 7, 2023 (2)](https://github.com/Terafora/My-Mixtape/assets/144109245/1adc1679-4fbb-41e4-9883-8c386be6065e)
 
 ### Mixtapes 🖭
 
 Inside each created mixtape is the view for users to create edit and delete tracks for their mixtapes as well as update the associated information for the mixtape.
 In here users are able to go through the tracks they have added and enjoy what they have collected on their personalised mixtape as well as add, delete and edit the tracks on the associated mixtape.
 At the top of the page is a share mixtape button which saves the url to the mixtape to the user's clipboard so they can share their mixes with friends and at the bottom of the page is an edit mixtape info button.
+
+![Screen Recording - Dec 7, 2023 (3)](https://github.com/Terafora/My-Mixtape/assets/144109245/92b67f82-764f-47c8-8b58-ae6be8c2be95)
 
 ### Login/Logout/Signup 🔒
 
@@ -117,7 +129,7 @@ All Testing can be found in my seperate TEST.md [here](https://github.com/Terafo
 - My Mixtape's backend was hosted by [ElephantSQL](https://www.elephantsql.com).
   - The backend is a PostgreSQL database.
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+- This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
   - Animations/MP4 video files are delivered by Cloudinary.
   - User uploaded images are handled by Cloudinary.
 
