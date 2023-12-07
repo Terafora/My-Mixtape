@@ -179,6 +179,6 @@ Any remaining open issues can be tracked [here](https://github.com/Terafora/My-M
 
 ## Unfixed Bugs
 
-#### No unfixed bugs
+A layout irregularity was caught on testing where the background container for the track list page stretches further below tracks in the list than expected.
 
-There are no remaining bugs that I am aware of. If you find any I would be very appreciative if you could let me know.
+There are no remaining bugs outside of what is mentioned above that I am aware of. If you find any I would be very appreciative if you could let me know.
