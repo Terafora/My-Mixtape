@@ -83,7 +83,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | Desktop | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/626ed329-f03f-4484-875d-4b9e87e446cc)  | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/16714693-356f-43b9-a150-a6cc554fbea0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3053330b-4dda-4143-a664-6d807192e2c5) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d20ff25c-4738-4c47-9ad2-f05762c92afd) | Works as expected |
 | Desktop (Portrait) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/70b0211a-5dac-48c6-aa44-01b10908c014) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/186e0289-61af-4621-985b-fad8a58e1ac4) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/22ff59f3-a394-49f2-a91f-07ce22401570) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/bcda9361-c116-4324-9b7e-e304556b634b) | Some minor issues with excessive space towards bottom of page. |
 | MS Surface Duo (Single Screen Portrait) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2e3649d7-e562-4e12-b3ed-af366725269f) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6a173114-d63c-4447-aa1a-90ebd2f3cff5) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/7719a959-4448-4c2c-b14f-ac40e5b4c2ee) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/a4e71ceb-1604-4272-9be9-74ec273f7300) | Works as expected though edit buttons change colour. |
-| MS Surface Duo (Dual-Screen Landscape) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d31f19a7-3b03-42e8-8bbe-246451627d2c) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/12185235-c66e-4629-beec-faa473388e69) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/640e28f5-2248-44a7-b74b-4b8c07ea23b8) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6b5fd416-1758-44a9-aec2-f6bb68e74615) | Works as expected though edit buttons change colour. |
+| MS Surface Duo (Dual-Screen Landscape) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/d31f19a7-3b03-42e8-8bbe-246451627d2c) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/12185235-c66e-4629-beec-faa473388e69) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/640e28f5-2248-44a7-b74b-4b8c07ea23b8) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6b5fd416-1758-44a9-aec2-f6bb68e74615) | Works as expected though edit buttons siaplay a different colour than expected. |
 | Galaxy Tab A | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/46c620f6-9e57-4f48-b0f5-9b8943154af0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/aee70a18-65da-40e5-a994-6ba7dc531cd0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5f7fc45d-6d14-446f-8589-9c411e86101e) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/e5dd7b49-8386-4a2f-8fec-d547503c0e5c) | Works as expected |
 | Huawei P30 Pro | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/b9144068-f9a5-465a-8a05-6774cb4dd15d) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f2b0b954-aa61-4c8e-9ebc-2e390296dcf0) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/786db5ee-f1d8-431a-b7a3-96d9940a9701) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/399c01c3-4c07-4f95-be0c-870ab94994fd) | Works as expected |
 
@@ -93,10 +93,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f28285a3-85cd-47b4-8a05-7d85f7d96e32) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse-about-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cdefd5fe-38dd-46f9-836a-303b86cdbfb1) | Some minor warnings |
-| Library | n/a | n/a | Lighthouse can't run on this page |
-| Tracklist | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/309b6890-6ecb-4ad8-9255-27181863d822) | Slightly slow response time due to number of images loading from cloudinary |
+| Home |  ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/f28285a3-85cd-47b4-8a05-7d85f7d96e32) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/5412c493-fdc7-44c0-8b81-e8e32e66232f) | Some minor warnings for mobile |
+| About | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/cdefd5fe-38dd-46f9-836a-303b86cdbfb1) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/3133484c-ed05-42e9-a8ca-d96c251fc849) | Some minor warnings for mobile |
+| Library | n/a | n/a | Lighthouse can't run on this page due to permission issues |
+| Tracklist | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/309b6890-6ecb-4ad8-9255-27181863d822) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/2e66903b-d1f1-4f79-b290-d6c0963aed2f) | Slightly slow response time on mobile due to number of images loading from cloudinary for mobile |
 
 Unable to test edit mixtape, delete mixtape, edit track, delete track due to login being required.
 
@@ -169,7 +169,7 @@ All previously closed/fixed bugs can be tracked [here]([https://github.com/Teraf
 
 | Bug | Status |
 | --- | --- |
-| [Duolicate Mixtape & Track Creation](https://github.com/Terafora/My-Mixtape/issues/21) | Closed |
+| [Duplicate Mixtape & Track Creation](https://github.com/Terafora/My-Mixtape/issues/21) | Closed |
 
 **Open Issues**
 
