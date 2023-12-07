@@ -12,6 +12,8 @@ This project uses HTML, CSS, JavaScript for font-end operations, and Django for 
 
 ![screen-recording_V2](https://github.com/Terafora/My-Mixtape/assets/144109245/7ddab116-bdb2-4cdf-8df9-d902ad09ff4f)
 
+For the project-board associated with this associated with this project, please click [here](https://github.com/users/Terafora/projects/6)
+
 ## 💻 Technologies 💻
 
 - HTML
@@ -36,13 +38,13 @@ When I began to make this however I saw that there was a limited appeal to this 
 ![Cassette Tape Icons](https://github.com/Terafora/My-Mixtape/assets/144109245/10da6610-38cb-4439-a282-d3e0077ebf6e)
 
 There was more designed than what made it to what is currently the final product and you may be curious about what those other assets may be so I'm providing a link to my Figma design boards below to that you can take a look yourself at what could have been, how my site was envisioned, and some hints at what may be coming in the future.
-(Please note this does not contain information or assets about the site prior to changing the theming an 80's synthwave aesthetic)
+(Please note this does not contain information or assets about the site prior to changing the theming an 80's synthwave aesthetic).
 
-- [The Figma board for My Mixtape](https://shorturl.at/hmqzT)
+- [The Figma board for My Mixtape](https://www.figma.com/file/MMXSySr5JDLlYniad0eXKp/My-Mix-Tapes?type=design&node-id=0-1&mode=design) 
 
 ### Wireframes
 
-As low-fidelity wireframes were created for each page for mobile, tablet and desktop I will incluge a link to these designs in particular [here](https://www.figma.com/file/MMXSySr5JDLlYniad0eXKp/My-Mix-Tapes?type=design&node-id=0-1&mode=design).
+As low-fidelity wireframes were created for each page for mobile, tablet and desktop I will incluge a link to these designs in particular [here.](https://www.figma.com/file/MMXSySr5JDLlYniad0eXKp/My-Mix-Tapes?type=design&node-id=0-1&mode=design).
 
 Higher Fidelity versions of these were also in the process of being created, however were left incomplete due to time restraints.
 
@@ -98,6 +100,8 @@ At the bottom of every mixtape's tracklist is a little share button that you can
 ### Unimplemented Features
 
 - Django messages for when certain actions are carried out by the user would be the next thing I would include.
+- Further tweeks to styling. Although it looks perfectly presentable and performs to a high standard I personally would like to go back in at a later date to tighten some aspects up as well as work on the overall design recieved from users. In particular the sizing and proportions on 4K monitors which although looks the same as a regular desktop has the effect of icons being too big.
+- Due to time restraints I didn't work on it and left it out of scope, however I would very much like to try creating functionality where the linked music plays in the app rather than redirecting users to the source of the music.
 
 ## Testing 🧪
 
@@ -112,12 +116,32 @@ All Testing can be found in my seperate TEST.md [here](https://github.com/Terafo
 
 - My Mixtape's backend was hosted by [ElephantSQL](https://www.elephantsql.com).
   - The backend is a PostgreSQL database.
+
+This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
   - Animations/MP4 video files are delivered by Cloudinary.
   - User uploaded images are handled by Cloudinary.
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
-
 ### The live site for My Mixtape can be found right [here](https://my-mix-tapes-a7ee13848429.herokuapp.com).
+
+## An Agile Approach
+
+### [Project Board](https://github.com/users/Terafora/projects/6/views/1)
+
+### A One Person Team
+
+For this project an Agile approach was taken when working throughout its course, and the appropriate kanban/project board can be found above as it not only includes each of the tasks I worked on but uses user stories as the benchmark and criteria I worked towards. These user stories can also be seen in my TEST.md [here](https://github.com/Terafora/My-Mixtape/blob/main/TEST.md) where I show tests against my user stories showing the integrated features.
+
+The approach of setting up user storied into a project board and then working from there was extremely useful as it gave clear view of the horizon I was heading towards, and as a result kept me from getting stuck when I encountered issues when building the site. It also acted as a good compass in that it kept me from getting too distracted with "nice to haves" which weren't required for the MVP of the site. In the end this approach served me much better than a traditional waterfall approach as it allowed me to dynamically change what I was working on within the project which lowered the amount of time lost overall while also being able to actively show that I was contributing to the final release of the site.
+
+### Time Management
+
+The time alloted for making My Mixtape was quite strict and required a lot of focus if I was ever going to get the amount I wanted done to happen. Fortunately with some early starts, late nights and a penchant for action I was able to work my way to creating a site I could happily display to the world.
+
+Much of the project can be cut into two categories; the functionality and the design work.
+For creating the MVP of the site the work leaned a lot more heavily towards the functionality of the site as at the end of the day I wanted to at least have something that performed the intended actions should something happen preventing me from getting a fully realised version out.
+Once the MVP was done I continued refining it and fixing any bugs/odd behaviour throughout the day while spending the evenings working on the design elements of the site such as layout, SVG images, and animations though this wasn't a strict seperation of time.
+
+The final stretch of the project came down to testing and polishing the application as well as documenting the project, its features and how it came to be.
 
 ## Credits
 
@@ -136,12 +160,16 @@ This project uses the [Cloudinary API](https://cloudinary.com) to store media as
 
 - [W3S](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) was referenced, in particular for how to style a scroll bar.
 
+- I used [Tim's Markdown Builder](https://tim.2bn.dev/markdown-builder/) to create a template to work from to build the TEST.md
+
 ### Images 🖼️
 
 | | | | |
 | --- | --- | --- | --- |
 | ![Screenshot 2023-12-06 152008](https://github.com/Terafora/My-Mixtape/assets/144109245/c2f83dec-b15a-4f6f-8fc7-f4a4448a066d) | ![Screenshot 2023-12-06 152636](https://github.com/Terafora/My-Mixtape/assets/144109245/7417255e-df87-4cb6-9710-84fb1f6d9f52) |![Screenshot 2023-12-06 153402](https://github.com/Terafora/My-Mixtape/assets/144109245/f4424c7e-d8aa-4c8f-a10c-6e59ab099c87) | ![Screenshot 2023-12-06 153232](https://github.com/Terafora/My-Mixtape/assets/144109245/6375f3ca-a44b-4c72-9677-02b479111eb7)|
 | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/77834f74-fd9e-4d25-a2c8-6713c7454477) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/03d2d71d-b966-46d1-a50c-5edb7dc71929) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/0bf1eec9-59b3-4765-b799-5835ee71e37f) | ![image](https://github.com/Terafora/My-Mixtape/assets/144109245/6d3a8725-da14-4a7a-9ba7-8a27c79eb68b) |
+
+More images of the site on various pages and devices can be viewed on my [TEST.md](https://github.com/Terafora/My-Mixtape/blob/main/TEST.md)
 
 ## Where to find more of my work 👇
 
